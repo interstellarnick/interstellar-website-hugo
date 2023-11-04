@@ -79,7 +79,7 @@ features:
 
 blog:
   enable: true
-  title: "Take a Look at the Latest Articles from Our Blog"
+  title: "The Interstellar Digital Blog"
   subtitle: "Latest Articles"
   button:
     label: "Browse All Articles"
