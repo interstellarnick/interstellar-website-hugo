@@ -1,6 +1,6 @@
 #################### default parameters ################################
 # favicon
-favicon = "images/favicon.png"
+favicon = "images/logo-D.png"
 # logo
 logo = "images/interstellar-digital-logo-light.svg"
 logo_footer = "images/logo-light.png"
@@ -35,12 +35,11 @@ preloader = "images/logo-dark.png" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Integration"
-link = "integration/"
+label = "Client Portal"
 
 [navigation_button_outline]
 enable = true
-label = "Get Started"
+label = "Get in Touch"
 link = "contact/"
 
 # contact info
@@ -56,7 +55,7 @@ content = "Cut Out the Noise! Get Acquainted With Your Prime Leads™ -- Accurat
 # Subscription
 [quote_form]
 enable = true
-submit_button_label = "Get A Quote"
+submit_button_label = "Get in Touch"
 placeholder = ""
 action = "#"                        # contact form works with [https://airform.io/] , [https://formspree.io]
 
@@ -86,7 +85,7 @@ enableQQ = false # https://valine.js.org/en/configuration.html#enableQQ
 keywords = ["Boilerplate", "Hugo", "Themefisher", "GetHugoThemes"]
 description = "This is meta description"
 author = "Themefisher"
-image = "images/favicon.png"                                       # this image will be used as fallback if a page has no image of its own
+image = "images/logo-D.png"                                       # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 [matomo]

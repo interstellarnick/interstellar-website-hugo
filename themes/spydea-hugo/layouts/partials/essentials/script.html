@@ -40,8 +40,59 @@
   .l-intd__announcment {
     background: linear-gradient(to right, #bd21e4, #0827f5, #bd21e4);
   }
+  .l-intd__howwe--caption, .l-intd__howwe--caption:hover {
+    cursor: default !important;
+    background-color: var( --neodigm-theme-brand );
+    opacity: .6;
+    text-align: center;
+  }
+  .l-intd__howwe--caption * {
+    cursor: default !important;
+    color: #fff;
+  }
 </style>
 
+<script>
+  document.addEventListener("DOMContentLoaded", ( ev )=>{
+    let elDrop = document.querySelector( ".nav-item.nav-dropdown.group" )
+    if( elDrop ){
+      elDrop.addEventListener( "mouseover", ( ev )=>{ 
+          setTimeout( ()=>{
+            let elItem = document.querySelector( "body > header > nav > div > ul > li.nav-item.nav-dropdown.group > ul > li:nth-child(1)" )
+            if( elItem ){
+              elItem.classList.add( "l-intd__howwe--caption" )
+              let elA = elItem.querySelector("a")
+              if( elA ){
+                console.log(" ~~~ | " , elA )
+                elA.addEventListener( "click", (ev)=>{ ev.preventDefault() })
+              }
+            }
+          }, 56)
+        }
+      )
+    }
+    /*
+    document.addEventListener("mouseover", ( ev )=>{
+      if( ev.target.classList.contains("nav-dropdown-link") ){
+        let elT = ev.target
+        if( elT.textContent.indexOf("Get More Clients") != -1 ){
+          //elT.dataset.n55PoptartHover = "js-popt-howwe"
+        }else{
+          //neodigmPopTart.close()
+        }
+
+        console.log( elT )
+        console.log( elT.textContent )
+      }
+    })*/
+  })
+</script>
+
+<!--
+<neodigm-acticon data-n55-theme="ghost" data-n55-size="medium" data-n55-wired4sound-click='5'
+data-n55-tulip='My Poptart' data-n55-poptart-click="js-popt-howwe"
+><neodigm-icon class="material-symbols-outlined" data-n55-wired4sound-hover='3'>movie</neodigm-icon></neodigm-acticon>
+-->
 <!-- main script -->
 {{ $scripts = $scripts | append (resources.Get "js/main.js") }}
 {{ $scripts = $scripts | resources.Concat "js/script.js" }}

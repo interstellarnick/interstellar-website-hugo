@@ -18,44 +18,33 @@ weight = 3
 
 [[main]]
 weight = 4
-name = "Pages"
+name = "How We Help You"
 hasChildren = true
 
 [[main]]
-parent = "Pages"
-name = "Elements"
-url = "elements/"
+parent = "How We Help You"
+name = "Get More Clients"
 weight = 1
 
 [[main]]
-parent = "Pages"
-name = "Career"
-url = "career/"
+parent = "How We Help You"
+name = "Digital Advertising"
+url = "Digital-Advertising/"
 
 [[main]]
-parent = "Pages"
-name = "Pricing"
-url = "pricing/"
+parent = "How We Help You"
+name = "Website Development"
+url = "Website-Development/"
 
 [[main]]
-parent = "Pages"
-name = "Authors"
-url = "authors/"
+parent = "How We Help You"
+name = "Search Engine Ranking"
+url = "Search-Engine-Ranking/"
 
 [[main]]
-parent = "Pages"
-name = "Contact"
-url = "contact/"
-
-[[main]]
-parent = "Pages"
-name = "Terms & Conditions"
-url = "terms-conditions/"
-
-[[main]]
-parent = "Pages"
-name = "404"
-url = "404/"
+parent = "How We Help You"
+name = "Content Marketing"
+url = "Content-Marketing/"
 
 [[footer_01]]
 name = "About us"
@@ -76,13 +65,3 @@ weight = 3
 name = "Blog"
 url = "blog/"
 weight = 1
-
-[[footer_02]]
-name = "Career"
-url = "career/"
-weight = 2
-
-[[footer_02]]
-name = "Terms & Conditions"
-url = "terms-conditions/"
-weight = 3
