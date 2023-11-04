@@ -22,9 +22,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Maven+Pro:wght@400;500;600;700",
+      "primary": "DM+Sans:opsz,wght@9..40,300",
       "primary_type": "sans-serif",
-      "secondary": "Merriweather:wght@400;700",
+      "secondary": "DM+Sans:opsz,wght@9..40,300",
       "secondary_type": "sans-serif"
     },
     "font_size": {
