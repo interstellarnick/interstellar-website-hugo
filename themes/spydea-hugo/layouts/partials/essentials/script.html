@@ -11,10 +11,36 @@
   {{ end }}
 {{ end }}
 
+<script> // Turn off console version logging and turn down volume
+  let neodigmOptCustom = { CONSOLE_LOG_VER:true, W4S_VOLUME: .016 }
+</script>
+
 <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55__v3_1.css"></link>
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55__v3_1.js"></script>
 <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"></link>
+<style>
+  /* Overrides */
+  :root {
+    --neodigm-theme-brand: #bd21e4;   --neodigm-theme-brand-alt: #0827f5;  /* Custom Override */
+    --neodigm-theme-primary: #92a8d1;   --neodigm-theme-primary-alt: #364C75;  /* Serenity approx. 25% darker */
+    --neodigm-theme-secondary: #EDCED0; --neodigm-theme-secondary-alt: #978284;  /* Sand Dollar */
 
+    --m5lc-theme-brand:  #bd21e4; --m5lc-theme-brand-alt:  #0827f5;  /* Custom Override */
+}
+  body > main > section.section.banner:after {
+    background-color: #d2d2d2;
+  }
+  .l-intd__h1 {
+    color: #fff;
+    line-height: .98;
+  }
+  .l-intd__head--sticky {
+    background-color: #fff;
+  }
+  .l-intd__announcment {
+    background: linear-gradient(to right, #bd21e4, #0827f5, #bd21e4);
+  }
+</style>
 
 <!-- main script -->
 {{ $scripts = $scripts | append (resources.Get "js/main.js") }}

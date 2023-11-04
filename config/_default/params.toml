@@ -2,7 +2,7 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/logo-dark.png"
+logo = "images/interstellar-digital-logo-light.svg"
 logo_footer = "images/logo-light.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
@@ -51,7 +51,7 @@ email = "hello@spydea.com"
 # Subscription
 [announcement]
 enable = true
-content = "Pellen tesque in ipsum id orci porta dapibus. Sed port titor lectus nibh Vivamus [Learn More](#)"
+content = "Cut Out the Noise! Get Acquainted With Your Prime Leads™ -- Accurate, Genuine, and Promising Leads [Learn More](#)"
 
 # Subscription
 [quote_form]

@@ -4,13 +4,14 @@
       "theme_color": {
         "primary": "#0827f5",
         "secondary": "#bd21e4",
-        "tertiary": "#0827f5",
+        "tertiary": "#dddddd",
         "quaternary": "#0827f5",
         "quinary": "#73b1ff",
         "senary": "#F4FDFF",
+
         "body": "#fff",
         "border": "#DBDBDB",
-        "theme_light": "#f3f0f0",
+        "theme_light": "#edba08",
         "theme_dark": "#000000"
       },
       "text_color": {
