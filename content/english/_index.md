@@ -1,6 +1,6 @@
 ---
 banner:
-  title: "Become The Obvious Choice"
+  title: "Become The Obvious Pepsi (tm) Choice"
   description: "Explore our full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers."
   images:
     main: "/images/banner/banner-image.jpg"
