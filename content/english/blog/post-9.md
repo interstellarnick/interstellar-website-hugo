@@ -1,7 +1,7 @@
 ---
 title: "Companies Moving In Onboard Ing New Employees With VR"
 date: 2022-09-04T05:00:00Z
-image: "/images/blog/9.jpg"
+image: "/images/blog/ada_compliance.jpg"
 author: "Jacob Jones"
 draft: false
 ---
