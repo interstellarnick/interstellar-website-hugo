@@ -1,10 +1,7 @@
 ---
 banner:
   title: "Become The Obvious Choice"
-  description: "Explore Interstellar Digital's full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers.
-  <br>
-  <br>
-  Want to learn more? Enter your email and we'll be with you faster than you can say <b>'interstellar evolution'!</b>"
+  description: "Explore Interstellar Digital's full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers."
   images:
     main: "/images/banner/banner-image.jpg"
     left: "/images/banner/banner-image-part-1.jpg"
