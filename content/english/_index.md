@@ -70,7 +70,7 @@ features:
   - title: "Introducing Gnosis™"
     subtitle: "LEAD GENERATION TECHNOLOGY"
     description: "Interstellar Digital and Azure Machine Learning have partnered to develop a cutting-edge, proprietary software called Gnosis. Harnessing the incredible power of AI and machine learning, Gnosis transforms your analytical data and market segments into actionable insights. Through a meticulous process analyzing 103-point identifiers, Gnosis expertly pinpoints the most lucrative pathways for your business."
-    image: "images/features/1.png"
+    image: "images/features/gnosis_ss.png"
 
   - title: "Say Hello to Prime Leads™"
     subtitle: "ELIMINATE THE GUESSWORK"
