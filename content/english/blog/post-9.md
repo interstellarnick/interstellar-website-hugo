@@ -1,5 +1,5 @@
 ---
-title: "Companies Moving In Onboard Ing New Employees With VR"
+title: "Accessibility Matters: Optimizing Your Website for ADA Compliance"
 date: 2022-09-04T05:00:00Z
 image: "/images/blog/ada_compliance.jpg"
 author: "Jacob Jones"

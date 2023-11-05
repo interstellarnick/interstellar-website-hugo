@@ -1,15 +1,18 @@
 ---
 banner:
-  title: "Become The Obvious Choice."
-  description: "Explore our full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers."
+  title: "Become The Obvious Choice"
+  description: "Explore Interstellar Digital's full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers.
+  <br>
+  <br>
+  Want to learn more? Enter your email and we'll be with you faster than you can say <b>'interstellar evolution'!</b>"
   images:
     main: "/images/banner/banner-image.jpg"
     left: "/images/banner/banner-image-part-1.jpg"
     right: "/images/banner/banner-image-part-2.jpg"
   facility:
-    - "Works Anywhere"
-    - "Get Rewarded"
-    - "No Hidden Fees"
+    - "Outperform Competitors"
+    - "Bespoke Strategies"
+    - "Result-Driven Tactics"
 
 brands:
   enable: false
@@ -27,7 +30,7 @@ brands:
 
 feature_list:
   enable: true
-  title: "Trusted Partners, Not a Vendor"
+  title: "A Trusted Partner, Not a Vendor"
   subtitle: "MEET INTERSTELLAR"
   description: "At Interstellar Digital, we’re more than service providers – we’re your trusted advisors here to help you navigate the complex world of marketing."
   list:
@@ -48,7 +51,7 @@ process:
   enable: true
   title: "A New Era of Precision and Results"
   subtitle: "CLEAR MARKETING DATA"
-  description: "You don’t have time for misleading leads and KPIs."
+  description: "It's Simple: You don’t have time for misleading leads and KPIs."
   list:
     - title: "Features You will Need"
       description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. As a result, we’re able to provide our customers with a precise cost per lead, enabling strategic decision-making that directly influences your revenue streams."
@@ -73,15 +76,15 @@ features:
     image: "images/features/1.png"
 
   - title: "Say Hello to Prime Leads™"
-    subtitle: "NO MORE GUESSING"
+    subtitle: "TAKING OUT THE GUESSWORK"
     description: "At the heart of Gnosis lies Prime Leads™. This groundbreaking feature enables us to identify and focus on leads with the highest potential – your Prime Leads™. By leveraging the analytical power of AI and machine learning, we ensure that our reported leads are accurate, genuine, and promising. You’ll never have to invest in leads that lack value or relevance again."
     image: "images/features/2.png"
 
 blog:
   enable: true
-  title: "The Interstellar Digital Blog"
-  subtitle: "Latest Articles"
+  title: "The Interstellar Knowledge Center"
+  subtitle: "THE LATEST"
   button:
-    label: "Browse All Articles"
+    label: "Browse All"
     link: "blog/"
 ---
