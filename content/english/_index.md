@@ -73,13 +73,13 @@ features:
     image: "images/features/1.png"
 
   - title: "Say Hello to Prime Leads™"
-    subtitle: "TAKING OUT THE GUESSWORK"
+    subtitle: "ELIMINATE THE GUESSWORK"
     description: "At the heart of Gnosis lies Prime Leads™. This groundbreaking feature enables us to identify and focus on leads with the highest potential – your Prime Leads™. By leveraging the analytical power of AI and machine learning, we ensure that our reported leads are accurate, genuine, and promising. You’ll never have to invest in leads that lack value or relevance again."
     image: "images/features/2.png"
 
 blog:
   enable: true
-  title: "The Interstellar Knowledge Center"
+  title: "Interstellar Knowledge Center"
   subtitle: "THE LATEST"
   button:
     label: "Browse All"

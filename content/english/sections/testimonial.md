@@ -1,7 +1,7 @@
 ---
 testimonial:
   enable: true
-  title: "Take an look at our customers stories"
+  title: "Elevating Brands: Our Clients Speak Out"
   subtitle: "INSPIRING TESTIMONIALS"
   items:
     - title: "Efficient Experience with Superb Customer Support"
