@@ -44,8 +44,8 @@ link = "contact/"
 
 # contact info
 [contact_info]
-mobile = "+94746-388817"
-email = "hello@spydea.com"
+mobile = "+1 630-912-0112"
+email = "info@interstellardigital.com"
 
 # Subscription
 [announcement]
@@ -82,9 +82,9 @@ enableQQ = false # https://valine.js.org/en/configuration.html#enableQQ
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = ["Boilerplate", "Hugo", "Themefisher", "GetHugoThemes"]
-description = "This is meta description"
-author = "Themefisher"
+keywords = ["Interstellar Digital", "Chicago Digital Marketing", "Paid Ads Marketing", "Chicago Web Design"]
+description = "Explore Interstellar Digital's full-service marketing solutions to see how we can help you boost exposure, generate leads, and turn visitors into loyal customers."
+author = "Interstellar Digital"
 image = "images/logo-D.png"                                       # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
@@ -127,12 +127,12 @@ button = "I Accept"
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+link = "https://www.facebook.com/InterstellarDigitalOfficial"
 
 [[social]]
 title = "twitter"
 icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#"
+link = "https://twitter.com/useinterstellar"
 
 [[social]]
 title = "mastodon"
