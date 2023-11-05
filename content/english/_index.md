@@ -33,13 +33,13 @@ feature_list:
   list:
     - title: "Increase Revenue"
       icon: "fa-regular fa-paper-plane"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Gnosis isn’t just a tool; it’s a transformational leap forward in lead generation."
     - title: "Spend Smarter"
       icon: "fa-regular fa-copy"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. We’re able to provide our customers with a precise cost per lead."
     - title: "Real Data for Real Results"
       icon: "fa-regular fa-lightbulb"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Embrace a future of precision, profitability, and progress with Gnosis and Prime Leads™."
     - title: "All Integrations"
       icon: "fa-regular fa-object-ungroup"
       description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
@@ -50,13 +50,13 @@ process:
   subtitle: "CLEAR MARKETING DATA"
   description: "It's Simple: You don’t have time for misleading leads and KPIs."
   list:
-    - title: "Features You will Need"
+    - title: "Optimal Traffic Times"
       description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. As a result, we’re able to provide our customers with a precise cost per lead, enabling strategic decision-making that directly influences your revenue streams."
       image: "images/tab-contents/feature-tab-content-1.jpg"
-    - title: "Increase Your Sales"
+    - title: "My Dashboard"
       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
       image: "images/tab-contents/feature-tab-content-2.jpg"
-    - title: "Choose Right Plan"
+    - title: "Billing"
       description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
       image: "images/tab-contents/feature-tab-content-3.jpg"
 
@@ -75,7 +75,7 @@ features:
   - title: "Say Hello to Prime Leads™"
     subtitle: "ELIMINATE THE GUESSWORK"
     description: "At the heart of Gnosis lies Prime Leads™. This groundbreaking feature enables us to identify and focus on leads with the highest potential – your Prime Leads™. By leveraging the analytical power of AI and machine learning, we ensure that our reported leads are accurate, genuine, and promising. You’ll never have to invest in leads that lack value or relevance again."
-    image: "images/features/2.png"
+    image: "images/features/prime_leads_ss.png"
 
 blog:
   enable: true
