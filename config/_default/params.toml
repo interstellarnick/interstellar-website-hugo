@@ -3,10 +3,10 @@
 favicon = "images/logo-D.png"
 # logo
 logo = "images/interstellar-digital-logo-light.svg"
-logo_footer = "images/logo-light.png"
+logo_footer = "images/interstellar-digital-logo-dark.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "158px"
+logo_width = "178px"
 logo_height = "37px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
