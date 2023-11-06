@@ -23,7 +23,7 @@ hasChildren = true
 
 [[main]]
 parent = "How We Help You"
-name = "Get More Clients"
+name = "Get More Business"
 weight = 1
 
 [[main]]
@@ -47,21 +47,26 @@ name = "Content Marketing"
 url = "Content-Marketing/"
 
 [[footer_01]]
-name = "About us"
+name = "Our Story"
 url = "about/"
 weight = 1
 
 [[footer_01]]
-name = "Contact us"
+name = "Interstellar Cares"
 url = "contact/"
 weight = 2
 
 [[footer_01]]
-name = "Pricing"
+name = "Knowledge Center"
 url = "pricing/"
 weight = 3
 
 [[footer_02]]
-name = "Blog"
+name = "Client Portal Login"
 url = "blog/"
 weight = 1
+
+[[footer_02]]
+name = "Get in Touch"
+url = "blog/"
+weight = 2
