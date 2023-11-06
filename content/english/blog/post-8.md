@@ -1,6 +1,6 @@
 ---
-title: "What To Consider Before Starting A Business – Inside The Studio"
-date: 2022-08-04T05:00:00Z
+title: "Why Keyword Research is Important for SEO"
+date: 2023-08-04T05:00:00Z
 image: "/images/blog/8.jpg"
 author: "Devon Lane"
 draft: false

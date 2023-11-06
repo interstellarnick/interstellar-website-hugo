@@ -1,6 +1,6 @@
 ---
-title: "How And Why We Decided To Launch An EMI Scheme For Our Employees."
-date: 2022-07-04T05:00:00Z
+title: "How Do I Make Sure My Site is SEO Friendly?"
+date: 2023-07-04T05:00:00Z
 image: "/images/blog/7.jpg"
 author: "David Harrison"
 draft: false
