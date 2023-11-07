@@ -60,20 +60,28 @@
     cursor: default !important;
     color: #fff;
   }
+  .pointer-events-none svg{
+    fill: var( --m5lc-theme-brand ) !important;
+    opacity: .4;
+  }
+  .l-intd__vect--alt svg,
+  .l-intd__vect--alt path{
+    stroke: var( --m5lc-theme-brand-alt ) !important;
+    opacity: .4;
+  }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", ( ev )=>{
-    let elDrop = document.querySelector( ".nav-item.nav-dropdown.group" )
+    let elDrop = document.querySelectorAll( ".nav-item.nav-dropdown.group" )[1]
     if( elDrop ){
       elDrop.addEventListener( "mouseover", ( ev )=>{ 
           setTimeout( ()=>{
-            let elItem = document.querySelector( "body > header > nav > div > ul > li.nav-item.nav-dropdown.group > ul > li:nth-child(1)" )
+            let elItem = elDrop.querySelector( "ul > li:nth-child(1)" )
             if( elItem ){
               elItem.classList.add( "l-intd__howwe--caption" )
               let elA = elItem.querySelector("a")
               if( elA ){
-                console.log(" ~~~ | " , elA )
                 elA.addEventListener( "click", (ev)=>{ ev.preventDefault() })
               }
             }
