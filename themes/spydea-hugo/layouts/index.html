@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ with .Params.banner }}
+
     <section
       class="section banner relative overflow-hidden before:z-10 after:z-10">
       <div class="container relative z-30">
@@ -141,7 +142,7 @@
                   <!-- End Bg Shape -->
                 </div>
               {{ else }}
-                <div class="feature-clip-path-1 relative">
+                <div class="thing feature-clip-path-1 relative">
                   {{ partial "image.html" (dict "Src" .image "Alt" "feature image" "Class" `mx-auto block`) }}
                   <!-- Start Bg Shape -->
                   <div
