@@ -74,6 +74,7 @@
     height: 400px;
     opacity: .7;
   }
+  .header.header-fixed-top { z-index: 32 !important; }
 </style>
 
 <script>
@@ -94,28 +95,51 @@
         }
       )
     }
-    /*
-    document.addEventListener("mouseover", ( ev )=>{
-      if( ev.target.classList.contains("nav-dropdown-link") ){
-        let elT = ev.target
-        if( elT.textContent.indexOf("Get More Clients") != -1 ){
-          //elT.dataset.n55PoptartHover = "js-popt-howwe"
-        }else{
-          //neodigmPopTart.close()
-        }
-
-        console.log( elT )
-        console.log( elT.textContent )
-      }
-    })*/
   })
 </script>
 
-<!--
-<neodigm-acticon data-n55-theme="ghost" data-n55-size="medium" data-n55-wired4sound-click='5'
-data-n55-tulip='My Poptart' data-n55-poptart-click="js-popt-howwe"
-><neodigm-icon class="material-symbols-outlined" data-n55-wired4sound-hover='3'>movie</neodigm-icon></neodigm-acticon>
--->
+<script>
+  elPortal = document.querySelector("body > header > nav > div > div > div > a.btn.btn-outline-primary.w-\\[200px\\].min-\\[340px\\]\\:w-\\[300px\\].lg\\:w-auto")
+  if( elPortal ){
+    elPortal.addEventListener("click", ( ev )=>{
+      ev.preventDefault()
+      neodigmSodaPop.autoOpen("js-pup__login--id")
+    })
+  }
+</script>
+
+<template id="js-pup__login--id" data-n55-sodapop-modal="false" 
+data-n55-sodapop-size="small">
+<div>
+<p class="hd2 h-center">Welcome Back!</p><br>
+    <section class="readable__doc">
+        <article style="padding: 2px 12px;">
+
+            <form autocomplete="off" novalidate
+            onsubmit="return false">
+
+<input id="tsk_contact_us_email" name="email" class="n55-lc__input" type="email"
+                placeholder="Email Address">
+
+<input id="tsk_contact_us_email" name="email" class="n55-lc__input" type="password"
+                placeholder="Password">
+               
+               
+                <div class="h-center">
+                    <br>
+                    <a id="btn-contact-us" data-n55-enchanted-cta
+                    onclick="neodigmToast.q('Please Enter a Valid|Email & Password','danger'); neodigmSodaPop.shake();"
+                    data-n55-enchanted-cta-size="medium" data-n55-enchanted-cta-dont-touch="true"
+                    data-n55-theme="marcom">
+                        <span data-n55-wired4sound-hover="3">Login <neodigm-icon class="material-symbols-outlined">passkey</neodigm-icon></span><span>Access Now <neodigm-icon class="material-symbols-outlined">send</neodigm-icon></span>
+                    </a>
+                </div>  
+            </form>
+        </article>
+    </section>
+</div>
+</template>
+
 <!-- main script -->
 {{ $scripts = $scripts | append (resources.Get "js/main.js") }}
 {{ $scripts = $scripts | resources.Concat "js/script.js" }}
