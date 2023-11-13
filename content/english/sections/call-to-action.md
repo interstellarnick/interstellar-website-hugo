@@ -9,7 +9,7 @@ cta:
 
     outline:
       label: "Interstellar ROI Calucator"
-      link: "integration/"
+      link: "tools/roi/"
 
 # don't create a separete page
 _build:

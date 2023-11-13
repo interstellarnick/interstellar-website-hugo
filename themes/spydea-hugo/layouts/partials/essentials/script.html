@@ -32,6 +32,21 @@
     --intd-gray: #e8e8e8; --intd-gnosis: #376b47;
     --QQQQtw-bg-opacity: 1 !important;
   }
+  *::-webkit-scrollbar-track { background: rgba(22, 22, 22, .2); }
+
+  neodigm-kpi > h5, neodigm-kpi > h6 {
+    position: relative !important;
+    overflow: hidden !important;
+    text-align: center !important;
+    color: #fff !important;
+    font-family: 'Helvetica', 'Helvetica Neue', 'Roboto Condensed',sans-serif !important;
+    font-weight: 300 !important;
+    margin: 4px !important;
+    padding: 4px !important;
+    text-decoration: none !important;
+    transition: all .6s ease !important;
+}
+
   .feature.triangle-up::after,
   .feature.triangle-down::after {
     background-color: var( --intd-gray ) !important;
@@ -55,6 +70,7 @@
     opacity: .26;
     filter: brightness(60%) grayscale(12%);
   }
+  .bg-image:nth-child( 3 ){ background-image:none; }
   .text-red-400 {
     color: #888 !important;
   }
