@@ -41,22 +41,22 @@ weight = 1
 [[main]]
 parent = "How We Help You"
 name = "Digital Advertising"
-url = "Digital-Advertising/"
+url = "digital-advertising/"
 
 [[main]]
 parent = "How We Help You"
 name = "Website Development"
-url = "Website-Development/"
+url = "website-development/"
 
 [[main]]
 parent = "How We Help You"
 name = "Search Engine Ranking"
-url = "Search-Engine-Ranking/"
+url = "search-engine-ranking/"
 
 [[main]]
 parent = "How We Help You"
 name = "Content Marketing"
-url = "Content-Marketing/"
+url = "content-marketing/"
 
 [[footer_01]]
 name = "Our Story"

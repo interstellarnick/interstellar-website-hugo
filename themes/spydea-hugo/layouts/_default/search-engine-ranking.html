@@ -1,0 +1,130 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+
+  {{ with .Params.gallery }}
+    {{ if .enable }}
+      <section class="section relative z-20 mt-[-26rem] overflow-hidden">
+        <div class="container relative">
+          <div data-aos="fade-up-sm" data-aos-delay="150" class="row">
+            <div class="md:col-6 lg:translate-x-24">
+              <div
+                class="max-w-[670px] rounded-[15px] border-[6px] border-white bg-white sm:border-[12px] lg:rotate-[-4deg]">
+                {{ partial "image.html" (dict "Src" .image_left "Class" "w-full rounded-[15px] object-cover" "Alt" "gallery") }}
+              </div>
+            </div>
+            <div class="md:col-6 lg:-translate-x-24 lg:pt-36">
+              <div
+                class="relative z-10 max-w-[670px] rounded-[15px] border-[6px] border-white bg-white sm:border-[12px] lg:rotate-[8deg]">
+                {{ partial "image.html" (dict "Src" .image_right "Class" "w-full rounded-[15px] object-cover" "Alt" "gallery") }}
+              </div>
+            </div>
+          </div>
+          <!-- Start Shape background -->
+          <div
+            class="pointer-events-none absolute left-[-14%] top-[-7%] -z-10 hidden select-none md:block lg:left-0"
+            data-aos="fade-right-sm"
+            data-aos-delay="150">
+            {{ partial "image.html" (dict "Src" "images/shapes/about-s-1.svg" "Class" "inline-svg text-tertiary" "Alt" "shape") }}
+          </div>
+          <div
+            class="pointer-events-none absolute right-0 top-0 -z-10 hidden select-none md:block lg:right-[30%]"
+            data-aos="fade-left-sm"
+            data-aos-delay="150">
+            {{ partial "image.html" (dict "Src" "images/shapes/about-s-2.svg" "Class" "inline-svg text-quaternary" "Alt" "shape") }}
+          </div>
+          <div
+            class="pointer-events-none absolute bottom-[-16%] right-[35%] -z-10 hidden select-none md:block"
+            data-aos="fade-down-sm"
+            data-aos-delay="150">
+            {{ partial "image.html" (dict "Src" "images/shapes/about-s-3.svg" "Class" "inline-svg text-secondary" "Alt" "shape") }}
+          </div>
+          <!-- End Shape background -->
+        </div>
+        <!-- End Main Content -->
+      </section>
+      <!-- End About Gallery -->
+    {{ end }}
+  {{ end }}
+
+  {{ with .Params.ultimate_vision }}
+    <section class="section relative z-20">
+      <div class="container">
+        <div class="row gy-4">
+          {{ range $i, $e := . }}
+            <div
+              data-aos="fade-left-sm"
+              data-aos-delay="{{ mul $i 50 }}"
+              class="lg:col-6">
+              <span
+                class="mb-6 inline-block font-medium uppercase text-red-400">
+                {{ .subtitle | markdownify }}
+              </span>
+              <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
+                <h2 class="font-semibold">
+                  {{ .title | markdownify }}
+                </h2>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+    <!-- End About Vision -->
+  {{ end }}
+
+  <hr data-n55-theme="brand" data-n55-size="xsmall">
+
+  <section class="pfmf-grid pfmf-grid__30_70"
+  onClick='neodigmCarousel.nav({"id": "js-caro-cont1", "nav": "next"}, (x)=>{ console.log( x ) }).nav({"id": "js-caro-cont2", "nav": "next"}, (x)=>{ console.log( x ) })'>
+    <div>
+        <neodigm-carousel id="js-caro-cont1">
+            <section>
+                <section data-n55-carousel-page-name="PageOne" style="background-color: var(--intd-gray); padding: 8px; border-radius: 12px;">
+                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
+                        <h2 class="font-semibold">
+                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
+                        </h2>
+                    </div>
+                </section>
+                <section data-n55-carousel-page-name="PageTwo">
+                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
+                        <h2 class="font-semibold">
+                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
+                        </h2>
+                    </div>
+                </section>
+            </section>
+         </neodigm-carousel>
+    </div>
+    <div>
+        <neodigm-carousel id="js-caro-cont2">
+            <section>
+                <section data-n55-carousel-page-name="PageOne">
+                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
+                        <h2 class="font-semibold">
+                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
+                        </h2>
+                    </div>
+                </section>
+                <section data-n55-carousel-page-name="PageTwo">
+                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
+                        <h2 class="font-semibold">
+                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
+                        </h2>
+                    </div>
+                </section>
+            </section>
+         </neodigm-carousel>
+    </div>
+</section>
+
+<hr data-n55-theme="brand" data-n55-size="xsmall">
+
+
+  <!-- cache partial only in production -->
+  {{ if hugo.IsProduction }}
+    {{ partialCached "essentials/footer.html" . }}
+  {{ else }}
+    {{ partial "essentials/footer.html" . }}
+  {{ end }}
+{{ end }}
