@@ -1,19 +1,19 @@
 ---
 title: Content Marketing
 layout: "content-marketing"
-description: "Vivamus accu msan tincidunt. Vestib ulum ac diam sit amet quam vehicula elementum sed suscipit tortor eget felis porttitor volut"
+description: "Content Marketing That Speaks Volumes"
 show_page_description: true
 
 gallery:
   enable: true
-  image_left: "images/about/1.jpg"
-  image_right: "images/about/2.jpg"
+  image_left: "images/about/interstellar branding.jpg"
+  image_right: "images/about/interstellar-digital-content-marketing.png"
 
 ultimate_vision:
-  - title: "A World Financial Connected with Open Opportunates all"
-    subtitle: "WE HAVE OUR VISION"
-  - title: "Connect the World Through a Smart, Free and Financing App"
-    subtitle: "WE ARE THE ULTIMATE"
+  - title: "We help your customers make their subconscious thoughts concrete decisions."
+    subtitle: "Content Marketing"
+  - title: "And that's because the best content strategies are subtle, yet impactful."
+    subtitle: "and + The Art of Storytelling"
 
 fun_fact:
   enable: true

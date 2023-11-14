@@ -1,7 +1,7 @@
 ---
 cta:
   enable: true
-  title: "Afraid Your Ads Are Falling Short? Get a Free Reality Check!"
+  title: "Afraid Your Ads Are Falling Short? <br> Get a Free Reality Check!"
   image: "/images/cta-image.png"
 
   buttons:
