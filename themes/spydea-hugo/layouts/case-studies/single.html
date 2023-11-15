@@ -1,0 +1,144 @@
+{{ define "main" }}
+  <section class="section page-header relative overflow-hidden pb-0 after:z-10">
+    <div class="container relative z-40">
+      <div class="row">
+        <div class="col-12 aos-init aos-animate" data-aos="fade-up-sm">
+          {{ partial "image.html" (dict "Src" .Params.image "Alt" "featured-image" "Class" `h-[350px] w-full rounded-t-xl object-cover md:h-[450px]`) }}
+        </div>     
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    {{ partial "components/bg-lines.html" (dict "Color" "bg-line-yellow") }}
+    <!-- End background lines -->
+
+    <!-- Start Shape background -->
+    <div
+      class="pointer-events-none absolute left-0 top-[5%] z-30 hidden select-none lg:block"
+      data-aos="fade-up-sm">
+      {{ partial "image.html" (dict "Src" "images/shapes/page-header-s-1.svg" "Class" "inline-svg text-secondary" "Alt"
+        "shape")
+      }}
+    </div>
+    <div
+      class="pointer-events-none absolute right-0 top-[25%] z-30 hidden select-none lg:block"
+      data-aos="fade-up-sm">
+      {{ partial "image.html" (dict "Src" "images/shapes/page-header-s-2.svg" "Class" "inline-svg text-quinary" "Alt"
+        "shape")
+      }}
+    </div>
+    <!-- End Shape background -->
+  </section>
+  <!-- End Page Header -->
+
+  <section class="section-sm relative overflow-hidden pt-6 md:pt-10">
+    <div class="container relative z-30">
+      <article class="row">
+        <div class="sm:col-10 mx-auto" data-aos="fade-up-sm">
+          <div>
+            <h2
+              class="font-secondary text-dark mb-6 text-2xl !leading-normal md:text-2xl lg:text-2xl xl:text-2xl">
+              {{ .Title | markdownify }}
+            </h2>
+            <h4
+            class="">
+            {{ .Params.Service | markdownify }}
+            </h4>
+            <div class="mb-6 flex flex-wrap items-center gap-x-12 gap-y-6">
+              {{ with site.GetPage (.Params.author | urlize) }}
+                <div class="flex items-center">
+                  <a
+                    title="author image"
+                    href="{{ .Permalink }}"
+                    class="relative z-20 overflow-hidden rounded-full border-[6px] border-zinc-100">
+                    {{ partial "image.html" (dict "Src" .Params.Image "Class" "h-[70px] w-[70px] object-cover" "Alt" .Params.Name) }}
+                  </a>
+                  <a
+                    href="{{ .Permalink }}"
+                    class="bg-theme-light font-primary text-dark relative z-10 -ml-3 rounded-r-3xl py-1 pl-6 pr-3 text-[15px] capitalize transition-colors hover:text-opacity-70">
+                    {{ .Params.Title | markdownify }}
+                  </a>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+          <style>
+            .l-metrics header { margin: 12px; border: solid 1px var( --intd-gray ); border-radius: 16px; }
+            .l-metrics div > div { padding: 12px; }
+            .l-metrics header p { font-size: 44px; margin: 8px; }
+          </style>
+          <div class="content">
+            <section class="l-metrics pfmf-grid pfmf-grid__33_33_33">
+            <div>
+              <header class="h-center"><p>{{ .Params.metric1 }}</p></header>
+              <div class="h-center"><p>Focus Keywords in the Top 10 Positions Increased by 34% in Q4</p></div>
+            </div>
+            <div>
+              <header class="h-center"><p>{{ .Params.metric2 }}</p></header>
+              <div class="h-center"><p>Average Keyword Ranking Increased by 19 Positions in Q4</p></div>
+            </div>
+            <div>
+              <header class="h-center"><p>{{ .Params.metric3 }}</p></header>
+              <div class="h-center"><p>Percentage of Keywords Ranking in the Top 10 Increased by 40% in Q4</p></div>
+            </div>
+            </section>
+            {{ .Content }}
+          </div>
+          <!-- comments -->
+          {{ if .Site.DisqusShortname }}
+            <div class="mt-10">
+              {{ template "_internal/disqus.html" . }}
+            </div>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+
+    <!-- Start Bg Shape -->
+    <div
+      class="pointer-events-none absolute left-0 top-[40%] hidden select-none lg:block"
+      data-aos="fade-up-sm">
+      {{ partial "image.html" (dict "Src" "images/shapes/blog-list-s-1.svg" "Class" "inline-svg text-quaternary" "Alt" "shape") }}
+    </div>
+    <div
+      class="pointer-events-none absolute bottom-[20%] right-[-6%] hidden select-none lg:block"
+      data-aos="fade-up-sm">
+      {{ partial "image.html" (dict "Src" "images/shapes/team-member-s-2.svg" "Class" "inline-svg text-quinary" "Alt" "shape") }}
+    </div>
+    <!-- End Bg Shape -->
+  </section>
+  <!-- End Article Section -->
+
+  {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union
+    (site.RegularPages.Related . )
+  }}
+  <section class="section articles relative z-20 pb-20 after:-z-10 md:pb-40">
+    <div class="container relative z-30">
+      <div class="row items-end justify-between pb-12">
+        <div class="lg:col-8 xl:col-6">
+          <h2 class="font-semibold" data-aos="fade-up-sm">
+            {{ i18n "related_post" }}
+          </h2>
+        </div>
+      </div>
+      <div class="row gy-4">
+        {{ range first 3 $related }}
+          <div data-aos="fade-up-sm" class="md:col-6 lg:col-4">
+            {{ partial "components/blog-card.html" . }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ partial "components/bg-lines.html" (dict "Color" "bg-line-sky") }}
+    <!-- End background lines -->
+  </section>
+  <!-- End Related Articles Section -->
+
+  <!-- cache partial only in production -->
+  {{ if hugo.IsProduction }}
+    {{ partialCached "essentials/footer.html" . }}
+  {{ else }}
+    {{ partial "essentials/footer.html" . }}
+  {{ end }}
+{{ end }}
