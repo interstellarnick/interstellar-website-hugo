@@ -14,7 +14,7 @@ hasChildren = true
 [[main]]
 parent = "Our Story"
 name = "Interstellar Cares"
-url = "interstellar_Cares/"
+url = "interstellar_cares/"
 weight = 1
 
 [[main]]
