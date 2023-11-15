@@ -6,8 +6,8 @@ show_page_description: true
 
 gallery:
   enable: true
-  image_left: "images/about/1.jpg"
-  image_right: "images/about/2.jpg"
+  image_left: "images/about/computadora.png"
+  image_right: "images/about/gno_kpi.png"
 
 ultimate_vision:
   - title: "A World Financial Connected with Open Opportunates all"

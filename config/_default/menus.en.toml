@@ -13,15 +13,21 @@ hasChildren = true
 
 [[main]]
 parent = "Our Story"
+name = "Case Studies"
+url = "/case-studies/"
+weight = 1
+
+[[main]]
+parent = "Our Story"
 name = "Interstellar Cares"
 url = "interstellar_cares/"
-weight = 1
+weight = 2
 
 [[main]]
 parent = "Our Story"
 name = "Careers"
 url = "careers/"
-weight = 2
+weight = 3
 
 [[main]]
 name = "Knowledge Center"

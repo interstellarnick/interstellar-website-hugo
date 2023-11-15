@@ -1,7 +1,7 @@
 ---
-title: "LRS Waste Management Services"
+title: "HS Wholesale"
 service: "Search Engine Optimization (SEO) - Local and National"
-date: 2023-03-04T05:00:00Z
+date: 2023-04-04T05:00:00Z
 image: "/images/blog/1.jpg"
 author: "Trevor Goodchild"
 draft: false

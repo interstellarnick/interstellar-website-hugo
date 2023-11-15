@@ -8,7 +8,7 @@
         {{ $paginator:= .Paginate .RegularPages }}
         {{ range $paginator.Pages }}
           <div class="md:col-6 lg:col-4">
-            {{ partial "components/blog-card.html" . }}
+            {{ partial "components/case-studies-card.html" . }}
           </div>
         {{ end }}
         <!-- end of post range -->
