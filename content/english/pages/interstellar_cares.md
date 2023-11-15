@@ -10,10 +10,10 @@ gallery:
   image_right: "images/about/senora-768x477.png"
 
 ultimate_vision:
-  - title: "We help your customers make their subconscious thoughts concrete decisions."
-    subtitle: "Content Marketing"
-  - title: "And that's because the best content strategies are subtle, yet impactful."
-    subtitle: "and + The Art of Storytelling"
+  - title: "We understand the profound impact that non-profits and mission-driven companies have on our world. That's why Interstellar Digital is here to offer our expertise in marketing and digital print media to amplify your noble cause."
+    subtitle: "Introducing Interstellar Cares"
+  - title: "Your ally in creating a positive impact. We recognize the extraordinary work that non-profits and socially conscious companies do to inspire and implement change. Our mission is to empower your efforts by providing tailored marketing solutions that resonate with your audience and drive meaningful engagement."
+    subtitle: "We understand"
 
 fun_fact:
   enable: true
