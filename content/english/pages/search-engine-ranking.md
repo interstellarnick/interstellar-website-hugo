@@ -6,13 +6,8 @@ show_page_description: true
 
 gallery:
   enable: true
-<<<<<<< HEAD
   image_left: "images/about/interstellar-digital-seo.png"
   image_right: "images/about/interstellar-digital-seo-2.png"
-=======
-  image_left: "images/about/hand_photo.png"
-  image_right: "images/about/2.jpg"
->>>>>>> 3be2d90706081ddfedf77c7505ea00cbc9ec9b31
 
 ultimate_vision:
   - title: "Local Presence, National Impact: Be Found Where It Matters."
