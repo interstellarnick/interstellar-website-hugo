@@ -132,23 +132,29 @@
     </div>
 </n55-wdg-horz-scrl>
 
-  <section class="pfmf-grid pfmf-grid__30_70"
+    <hr data-n55-theme="brand" data-n55-size="xsmall">
+
+  <section class="pfmf-grid pfmf-grid__50_50"
   onClick='neodigmCarousel.nav({"id": "js-caro-cont1", "nav": "next"}, (x)=>{ console.log( x ) }).nav({"id": "js-caro-cont2", "nav": "next"}, (x)=>{ console.log( x ) })'>
     <div>
         <neodigm-carousel id="js-caro-cont1">
             <section>
                 <section data-n55-carousel-page-name="PageOne">
-                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
-                        <h2 class="font-semibold">
-                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
-                        </h2>
+                    <div class="border-dark border-opacity-50 py-2 pl-6">
+                        <img src="/interstellar-website/icon-phone.png" style="max-width: 176px; margin: auto auto;"
+                        alt="Interstellar Cares">
                     </div>
                 </section>
                 <section data-n55-carousel-page-name="PageTwo">
-                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
-                        <h2 class="font-semibold">
-                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
-                        </h2>
+                    <div class="border-dark border-opacity-50 py-2 pl-6">
+                        <img src="/interstellar-website/icon-cal.png" style="max-width: 176px; margin: auto auto;"
+                        alt="Interstellar Cares">
+                    </div>
+                </section>
+                <section data-n55-carousel-page-name="PageOne">
+                    <div class="border-dark border-opacity-50 py-2 pl-6">
+                        <img src="/interstellar-website/icon-call.png" style="max-width: 176px; margin: auto auto;"
+                        alt="Interstellar Cares">
                     </div>
                 </section>
             </section>
@@ -158,17 +164,18 @@
         <neodigm-carousel id="js-caro-cont2">
             <section>
                 <section data-n55-carousel-page-name="PageOne">
-                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
-                        <h2 class="font-semibold">
-                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
-                        </h2>
+                    <div class="border-dark py-2 pl-6 h-center">
+                        <p class="font-semibold hd3">Your Phones Are Ringing</p>
                     </div>
                 </section>
                 <section data-n55-carousel-page-name="PageTwo">
-                    <div class="border-dark border-l-2 border-opacity-50 py-2 pl-6">
-                        <h2 class="font-semibold">
-                        lkjdkd lasjdfkljaisd aodsiaka dlkjje did  dozsdoj diohiuase d dkjkdh
-                        </h2>
+                    <div class="border-dark py-2 pl-6 h-center">
+                        <p class="font-semibold hd3">Your Calendar is Filled</p>
+                    </div>
+                </section>
+                <section data-n55-carousel-page-name="PageThree">
+                    <div class="border-dark py-2 pl-6 h-center">
+                        <p class="font-semibold hd3">Your Team is Following Real Leads</p>
                     </div>
                 </section>
             </section>
@@ -177,6 +184,10 @@
 </section>
 
 <hr data-n55-theme="brand" data-n55-size="xsmall">
+
+<script>
+    setInterval( ()=>{ document.getElementById("js-caro-cont1").click() }, 2e3 )
+</script>
 
 
   <!-- cache partial only in production -->
