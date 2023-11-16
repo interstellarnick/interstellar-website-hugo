@@ -120,9 +120,6 @@
     {{ end }}
   {{ end }}
 
-  {{ partial "testimonial.html" . }}
-
-
   <!-- cache partial only in production -->
   {{ if hugo.IsProduction }}
     {{ partialCached "essentials/footer.html" . }}
