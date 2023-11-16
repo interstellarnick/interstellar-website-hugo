@@ -42,22 +42,22 @@ feature_list:
       description: "Embrace a future of precision, profitability, and progress with Gnosis and Prime Leads™."
     - title: "All Integrations"
       icon: "fa-regular fa-object-ungroup"
-      description: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit, eget tincidunt pulvinar a. Curabitur aliquet quam id dui posuere"
+      description: "Our platform seamlessly integrates with Enterprise marketing automation and reporting stacks. In fact, Gnosis is an API that be referenecd in other customer reporting applications."
 
 process:
   enable: true
-  title: "A New Era of Precision and Results"
-  subtitle: "CLEAR MARKETING DATA"
+  title: "Gnosis: Included With All Marketing Programs"
+  subtitle: "A New Era of Precision and Results"
   description: "It's Simple: You don’t have time for misleading leads and KPIs."
   list:
-    - title: "Optimal Traffic Times"
-      description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. As a result, we’re able to provide our customers with a precise cost per lead, enabling strategic decision-making that directly influences your revenue streams."
-      image: "images/tab-contents/feature-tab-content-1.jpg"
-    - title: "My Dashboard"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    - title: "A Clear View of Your Marketing Program"
+      description: "See your Marketing Deliverables, marketing KPIs, and Prime Lead totals from your custom Gnosis dashboard."
+      image: "images/tab-contents/client-portal.png"
+    - title: "Intelligent 24/7 Reporting"
+      description: "It's Simple: You don’t have time for misleading leads and KPIs. Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. "
       image: "images/tab-contents/feature-tab-content-2.jpg"
-    - title: "Billing"
-      description: "Proin eget tortor risus. Donec sollicitudin molestie imperdiet et, porttitor at sem."
+    - title: "A Dedicated Expert in your Field"
+      description: "Book touchpoints with your Account Manager."
       image: "images/tab-contents/feature-tab-content-3.jpg"
 
 fun_fact:

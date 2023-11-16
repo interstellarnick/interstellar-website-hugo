@@ -6,14 +6,9 @@ show_page_description: true
 
 gallery:
   enable: true
-  image_left: "images/about/1.jpg"
-  image_right: "images/about/2.jpg"
+  image_left: "images/about/website-development-2.png"
+  image_right: "images/about/website-development.png"
 
-ultimate_vision:
-  - title: "Tailored Website Development. Whether you’re starting from scratch, looking to enhance your current site, or aiming to maintain your online presence, Interstellar Digital is your comprehensive solution."
-    subtitle: "ELEVATE YOUR ROI"
-  - title: "Non-compliance can be costly. At Interstellar Digital, compliance is an inherent part of our process."
-    subtitle: "COMPLIANCE"
 
 fun_fact:
   enable: true
