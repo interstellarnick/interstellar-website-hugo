@@ -1,7 +1,7 @@
 ---
 title: Digital Advertising
 layout: "digital-advertising"
-description: "Vivamus accu msan tincidunt. Vestib ulum ac diam sit amet quam vehicula elementum sed suscipit tortor eget felis porttitor volut"
+description: "Spend Smart | Technology That Serves You"
 show_page_description: true
 
 gallery:

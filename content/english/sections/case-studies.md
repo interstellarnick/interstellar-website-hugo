@@ -8,7 +8,7 @@ casestudies:
       description: "Search Engine Optimization (SEO) - Local and National"
       uri: "/interstellar-website/case-studies/lrs/"
       customer:
-        logo: "images/client-logo/lrs_logo.png"
+        logo: "images/about/lrs-logo.svg"
         name: "Devon Lane"
         image: "images/customers/1.jpg"
         profession: "VP growth at Facebook"
@@ -16,7 +16,7 @@ casestudies:
       description: "HS Wholesale"
       uri: "/interstellar-website/case-studies/hs-wholsale/"
       customer:
-        logo: "images/client-logo/hp_logo.png"
+        logo: "images/about/hs-wholesale-logo.png"
         name: "Guy Hawkins"
         image: "images/customers/2.jpg"
         profession: "VP growth at Facebook"

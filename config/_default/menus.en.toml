@@ -65,26 +65,16 @@ name = "Content Marketing"
 url = "content-marketing/"
 
 [[footer_01]]
-name = "Our Story"
-url = "about/"
-weight = 1
-
-[[footer_01]]
 name = "Interstellar Cares"
-url = "contact/"
+url = "interstellar_cares/"
 weight = 2
 
 [[footer_01]]
 name = "Knowledge Center"
-url = "pricing/"
+url = "blog/"
 weight = 3
 
 [[footer_02]]
-name = "Client Portal Login"
-url = "blog/"
-weight = 1
-
-[[footer_02]]
 name = "Get in Touch"
-url = "blog/"
+url = "contact/"
 weight = 2

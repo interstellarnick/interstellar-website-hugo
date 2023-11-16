@@ -1,7 +1,7 @@
 ---
 title: Website Development
 layout: "website-development"
-description: "Vivamus accu msan tincidunt. Vestib ulum ac diam sit amet quam vehicula elementum sed suscipit tortor eget felis porttitor volut"
+description: "Tailored Website Development"
 show_page_description: true
 
 gallery:
@@ -10,10 +10,10 @@ gallery:
   image_right: "images/about/2.jpg"
 
 ultimate_vision:
-  - title: "A World Financial Connected with Open Opportunates all"
-    subtitle: "WE HAVE OUR VISION"
-  - title: "Connect the World Through a Smart, Free and Financing App"
-    subtitle: "WE ARE THE ULTIMATE"
+  - title: "Tailored Website Development. Whether you’re starting from scratch, looking to enhance your current site, or aiming to maintain your online presence, Interstellar Digital is your comprehensive solution."
+    subtitle: "ELEVATE YOUR ROI"
+  - title: "Non-compliance can be costly. At Interstellar Digital, compliance is an inherent part of our process."
+    subtitle: "COMPLIANCE"
 
 fun_fact:
   enable: true

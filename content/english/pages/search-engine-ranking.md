@@ -10,10 +10,10 @@ gallery:
   image_right: "images/about/2.jpg"
 
 ultimate_vision:
-  - title: "A World Financial Connected with Open Opportunates all"
-    subtitle: "WE HAVE OUR VISION"
-  - title: "Connect the World Through a Smart, Free and Financing App"
-    subtitle: "WE ARE THE ULTIMATE"
+  - title: "Local Presence, National Impact: Be Found Where It Matters."
+    subtitle: "LOCATION, LOCATION, LOCATION"
+  - title: "While Google might be synonymous with search, there’s a broader landscape to conquer. Your digital exposure shouldn’t be limited."
+    subtitle: "BEYOND GOOGLE"
 
 fun_fact:
   enable: true
