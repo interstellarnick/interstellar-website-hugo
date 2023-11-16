@@ -1,12 +1,12 @@
 ---
 title: Search Engine Ranking
 layout: "search-engine-ranking"
-description: "Vivamus accu msan tincidunt. Vestib ulum ac diam sit amet quam vehicula elementum sed suscipit tortor eget felis porttitor volut"
+description: "Master Your Marke With Strategic SEO"
 show_page_description: true
 
 gallery:
   enable: true
-  image_left: "images/about/1.jpg"
+  image_left: "images/about/hand_photo.png"
   image_right: "images/about/2.jpg"
 
 ultimate_vision:
