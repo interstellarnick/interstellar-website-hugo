@@ -99,7 +99,7 @@
     {{ $featuresLength := len . }}
     {{ range $index, $e := . }}
       {{ $modbool := modBool $index 2 }}
-      <section
+      <section id="prime"
         class="section-lg feature {{ if eq $featuresLength 1 }}
           bg-senary sm:py-32 lg:py-44
         {{ else if eq $index 0 }}

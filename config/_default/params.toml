@@ -50,7 +50,7 @@ email = "info@interstellardigital.com"
 # Subscription
 [announcement]
 enable = true
-content = "Cut Out the Noise! Get Acquainted With Your Prime Leads™ -- Accurate, Genuine, and Promising Leads [Learn More](#)"
+content = "Cut Out the Noise! Get Acquainted With Your Prime Leads™ -- Accurate, Genuine, and Promising Leads [Learn More](#prime)"
 
 # Subscription
 [quote_form]
