@@ -5,7 +5,7 @@ description: "Tailored Website Development"
 show_page_description: true
 
 gallery:
-  enable: true
+  enable: false
   image_left: "images/about/website-development-2.png"
   image_right: "images/about/website-development.png"
 

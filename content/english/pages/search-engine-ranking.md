@@ -5,15 +5,10 @@ description: "Master Your Marke With Strategic SEO"
 show_page_description: true
 
 gallery:
-  enable: true
+  enable: false
   image_left: "images/about/interstellar-digital-seo.png"
   image_right: "images/about/interstellar-digital-seo-2.png"
 
-ultimate_vision:
-  - title: "Local Presence, National Impact: Be Found Where It Matters."
-    subtitle: "LOCATION, LOCATION, LOCATION"
-  - title: "While Google might be synonymous with search, there’s a broader landscape to conquer. Your digital exposure shouldn’t be limited."
-    subtitle: "BEYOND GOOGLE"
 
 fun_fact:
   enable: true

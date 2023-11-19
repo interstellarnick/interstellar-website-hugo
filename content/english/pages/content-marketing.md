@@ -5,15 +5,10 @@ description: "Content Marketing That Speaks Volumes"
 show_page_description: true
 
 gallery:
-  enable: true
+  enable: false
   image_left: "images/about/interstellar branding.jpg"
   image_right: "images/about/interstellar-digital-content-marketing.png"
 
-ultimate_vision:
-  - title: "We help your customers make their subconscious thoughts concrete decisions."
-    subtitle: "Content Marketing"
-  - title: "And that's because the best content strategies are subtle, yet impactful."
-    subtitle: "and + The Art of Storytelling"
 
 fun_fact:
   enable: true

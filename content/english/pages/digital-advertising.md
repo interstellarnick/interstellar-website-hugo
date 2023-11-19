@@ -5,7 +5,7 @@ description: "Spend Smart | Technology That Serves You"
 show_page_description: true
 
 gallery:
-  enable: true
+  enable: false
   image_left: "images/about/computadora.png"
   image_right: "images/about/gno_kpi.png"
 
