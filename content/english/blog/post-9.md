@@ -6,40 +6,52 @@ author: "Jacob Jones"
 draft: false
 ---
 
-We collect certain identifying personal data when you Sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymizedand aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+The Americans with Disabilities Act (ADA) came into force in the USA in the year 1990, with the goal in mind to help narrow the employment gap between those with disabilities and those without.
 
-#### It’s natural for business leaders to be overwhelmed, but keep a balanced outlook
 
-##### Service Provided AS IS
+#### If you want to learn about why ADA compliance is important for your website design, you’ve come to the right place!
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+##### What is ADA?
 
-##### Interoperation with Slack
+The Americans with Disabilities Act (ADA) came into force in the USA in the year 1990, with the goal in mind to help narrow the employment gap between those with disabilities and those without.
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+The purpose was to create fertile ground and opportunities for people with disabilities to have opportunities and to have a layer of protection from discrimination.
 
-##### Company Liability
+##### Where does ADA and website design meet?
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+There are now accessability guidelines for businesses to use in order to be ADA compliant, specifically in removing “access barriers” between the person with disabilities and their ability to solicit the goods or services from a company.
 
+##### ADA compliance and your Google rank
+
+We all know how hot the competition is in an online marketplace that saw a sizeable uptick since the beginning of the pandemic. COVID-19 reportedly bolstered ecommerce to $26.7 trillion , which means a larger pool of customers, but also a larger pool of competition.
+
+There are ways to boost your Search Engine Optimization (SEO) through web design, and one of those ways is by incorporating ADA compliance into your web page.
+
+ADA compliance helps to make your web page more user friendly, which factors favorably with the algorithm. You can also use meta tagging in order to solidify your status as ADA compliant.
+
+<!--
 > Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
 >
 > <cite>Esther Howard</cite><br> <span>CEO & Founder</span>
+-->
+##### ADA compliance’s effect on your revenue
 
-##### Use internal mobility as an opportunity to use internal resources
+A whopping 61 million Americans, which is equal to 26% of Americans, live with some form of disability in their day-to-day lives. A little higher than you would have thought, right?
 
-In order to use our Service, you must meet a number of conditions, including but not limited to:
+This is a large customer base to be pleasing (or not pleasing). By integrating ADA compliance into your web design, you are not only reaching a much larger customer base more effectively and efficiently, but you are also tapping into a market that many of your competitors may not be.
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
+Don’t make a ready and willing audience work hard to be able to access your services, as there is a good chance that the very fact that they are working hard to access them may put them off altogether.
 
-##### You must not:
+Having something as simple as subtitles on your videos, or text to describe images and tables, will go much further than you’d think in the user journey of a person living with disabilities.
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
+##### Ratings, reviews and ADA compliance
+
+Another thing that is very much worth taking into account are the power of reviews. Reviews have recently replaced word-of-mouth recommendations and are now gold dust for your online presence.
+
+Customers living with disabilities will be far more likely to rate your business favorably if they felt as though your company went the extra mile to provide access for them – try to be the exception here.
+
+Even if a customer is not living with a disability, reading a review that shows that your company cares for those who do live with disabilities will show that you are a brand that cares, has integrity and is interested in inclusivity.
+
+##### You can contact us today for more on how we can help you to be ADA compliant!
+  
+  <nav><a data-aos="fade-up-sm" id="js-seo_page2_cta" href="/interstellar-website/contact/" data-n55-enchanted-cta="" data-n55-enchanted-cta-ambient="emit" data-n55-enchanted-cta-dont-touch="true" data-n55-enchanted-cta-shape-off="true" data-n55-enchanted-cta-hover-an="true" data-n55-enchanted-cta-size="large" data-n55-theme="brand" data-n55-wired4sound-click="vibrate"><span data-n55-wired4sound-hover="3">Get in Touch</span><span>Contact Us</span></a></nav>

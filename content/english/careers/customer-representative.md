@@ -1,7 +1,7 @@
 ---
-title: "Customer Service Representative"
+title: "Sales Representative"
 job_type: "Full-time"
-location: "Seattle, WA, USA"
+location: "Rolling Meadows, IL, USA"
 
 apply_link:
   link: "#"

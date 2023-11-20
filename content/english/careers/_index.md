@@ -1,6 +1,6 @@
 ---
-title: "Career At Spydea"
-description: "Nulla quis lorem ut libero male suada feugiat. Prae sent massa, convallis a pellent esque nec, egestas non nisi."
+title: "Interstellar Digital Careers"
+description: "Always looking forward to hearing from the best and brightest."
 show_page_description: true
 
 featured_image: "images/career.jpg"
@@ -14,14 +14,14 @@ benefits:
       title: "Flexible Hours"
       description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
     - icon: "fa-solid fa-house-laptop"
-      title: "100% Remote"
+      title: "Hybrid Location"
       description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
     - icon: "fa-solid fa-chart-line"
       title: "Career Growth"
       description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
 
 testimonial:
-  enable: true
+  enable: false
   title: "Take an look at our customers stories"
   subtitle: "INSPIRING TESTIMONIALS"
   items:
@@ -56,7 +56,7 @@ testimonial:
 
 opened_positions:
   enable: true
-  title: "Spydea Open Positions"
+  title: "Interstellar Digital Open Positions"
   subtitle: "JOIN OUR TEAM"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
+  description: "We'd love to hear from you!"
 ---

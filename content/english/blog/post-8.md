@@ -6,40 +6,32 @@ author: "Devon Lane"
 draft: false
 ---
 
-We collect certain identifying personal data when you Sign up to our Service such as your name, email address, PayPal address (if different from email address), and telephone number. The personal data we collect from you is disclosed only in accordance with our Terms of Service and/or this Privacy Policy.Conclude collects Slack account and access information from Users for the purposes of connecting to the Slack API and to authenticate access to information on the Conclude website. Whenever you visit our Site, we may collect non-identifying information from you, such as referring URL, browser, operating system, cookie information, and Internet Service Provider. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, this information alone cannot usually be used to identify you.The term "personal data" does not include any anonymizedand aggregated data made on the basis of personal data, which are wholly owned by Conclude.
+Keyword optimization does make a difference. Small business owners are always trying to find . Keyword research can help you rank better, improve SEO, and bring more traffic to your website. Choosing the best keywords will help connect the products or services you’re trying to promote with the customers that are most likely to be interested. You can present your product or service to your target audience if you have a better understanding of what they are searching for.
 
-#### It’s natural for business leaders to be overwhelmed, but keep a balanced outlook
+#### It’s natural for business leaders to be overwhelmed, but keep a balanced outlook, here's the basics...
 
-##### Service Provided AS IS
+##### Reach Your Target Audience
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+A search engine presents specific search result options based on the words a potential customer types into their search bar. Understanding what your target market is searching for is important when choosing keywords. If you select the most appropriate keywords, you rank better in search engines for that specific product or service. Taking a look at a summary of your keyword metrics , related keywords, competition, and search volumes can be a great research tool to promote your ranking and profile in search engines.
 
-##### Interoperation with Slack
+##### Bring More Customers to Your Website
 
-The Service is provided for free during this pilot project, and is provided "as is" with no warranty. Conclude will provide User support for the Service, however; Conclude is not committed to any level of service or availability of the Service. A further description of the Service and our user support is available at the Site.
+Better keyword research helps make business marketing more effective. Step back to examine the reach of your business and what you’re offering customers. Think of all of the needs that are met by what you’re promoting. This allows you to add new keywords and expand your perspective. Keyword research helps you see all of the different needs people have that are related to your business. When people search for these words your site will appear and rank higher in the search results. Keyword research is extremely important for SEO and driving traffic to your site.
 
-##### Company Liability
+##### Make Your Website More Focused on Customers
 
-If you enter into this agreement on behalf of a company, you hereby agree that the company is responsible under this Agreement for all actions and omissions conducted by its designated users of the Service.
+An important marketing tool for your business is its website. You want to reach target customers and put a spotlight on their potential needs. Keyword research gives you information about what your online audience needs and cares about. Examining the search patterns of customers shows you what words and phrases are most commonly searched for. You want to engage new customers and keep them interested. Keyword research can help you build a better website and improve your search enginge rankings. You want to choose keywords that make sense so the customer finds what they’re searching for on your site.
 
+<!--
 > Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum
 >
 > <cite>Esther Howard</cite><br> <span>CEO & Founder</span>
+-->
 
-##### Use internal mobility as an opportunity to use internal resources
+##### Higher Ranking as Most Relevant Search Option
 
-In order to use our Service, you must meet a number of conditions, including but not limited to:
+The right keyword combination can put your site at the top as the most relevant result when a customer performs a search. You want to promote your site and make it the best option available in the search engine. Cramming your content with useless keywords or repeating them over and over to try to improve SEO doesn’t usually work. Do careful research, choose compelling keywords that are most relevant to what you offer.
 
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
+##### Create Effective Marketing Strategies
 
-##### You must not:
-
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
+Keyword research allows you to find more potential customers by examining what they’re looking for. Business is all about what the customer wants. Figuring out what your target audience needs is the key to better marketing. Keyword research lets you know what visitors to your site are looking for and is the key to effective SEO for your small business.
