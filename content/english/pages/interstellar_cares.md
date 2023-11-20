@@ -5,15 +5,10 @@ description: "Let’s make your mission impossible to ignore."
 show_page_description: true
 
 gallery:
-  enable: true
+  enable: false
   image_left: "images/about/hero-1.png"
   image_right: "images/about/senora-768x477.png"
 
-ultimate_vision:
-  - title: "We understand the profound impact that non-profits and mission-driven companies have on our world. That's why Interstellar Digital is here to offer our expertise in marketing and digital print media to amplify your noble cause."
-    subtitle: "Introducing Interstellar Cares"
-  - title: "Your ally in creating a positive impact. We recognize the extraordinary work that non-profits and socially conscious companies do to inspire and implement change. Our mission is to empower your efforts by providing tailored marketing solutions that resonate with your audience and drive meaningful engagement."
-    subtitle: "We understand"
 
 fun_fact:
   enable: true

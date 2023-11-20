@@ -72,8 +72,36 @@
     <!-- End About Vision -->
   {{ end }}
 
-  <hr data-n55-theme="brand" data-n55-size="xsmall">
-
+  <section class="pfmf-grid pfmf-grid__50_50">
+    <div>
+      <h2 data-aos="fade-up-sm" class="font-semibold aos-init aos-animate">Introducing Interstellar Cares</h2>
+      <br>
+      <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm">We understand the profound impact that non-profits and mission-driven companies have on our world. That's why Interstellar Digital is here to offer our expertise in marketing and digital print media to amplify your noble cause.</p>
+      <br>
+      <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm"></p>
+    </div>
+    <section>
+      <img src="/interstellar-website/interstellar-digital.svg" alt="Digital Magic Marketing"
+      style="width: 68%; margin: auto;">
+    </section>    
+  </section>
+  <br>
+  <section class="pfmf-grid pfmf-grid__50_50">
+    <div>
+      <img src="/interstellar-website/interstellar-cares.png" alt="Digital Magic Marketing"
+      style="width: 88%; margin: auto;">
+     
+    </div>
+    <section>
+      <h2 data-aos="fade-up-sm" class="font-semibold aos-init aos-animate">Why Choose Interstellar Cares</h2>
+      <br>
+      <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm">Your ally in creating a positive impact. We recognize the extraordinary work that non-profits and socially conscious companies do to inspire and implement change. Our mission is to empower your efforts by providing tailored marketing solutions that resonate with your audience and drive meaningful engagement.</p>
+      <br>
+      <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm"></p>
+    </section>    
+  </section>
+<br><br>
+    <!--
   <section class="pfmf-grid pfmf-grid__30_70"
   onClick='neodigmCarousel.nav({"id": "js-caro-cont1", "nav": "next"}, (x)=>{ console.log( x ) }).nav({"id": "js-caro-cont2", "nav": "next"}, (x)=>{ console.log( x ) })'>
     <div>
@@ -107,7 +135,9 @@
             </section>
          </neodigm-carousel>
     </div>
+
     <div>
+  
         <neodigm-carousel id="js-caro-cont2">
             <section>
                 <section data-n55-carousel-page-name="PageOne">
@@ -142,6 +172,7 @@
                 </section>
             </section>
          </neodigm-carousel>
+        -->
     </div>
 </section>
 
@@ -149,9 +180,64 @@
   setInterval( ()=>{ document.getElementById("js-caro-cont1").click() }, 8e3 )
 </script>
 
-<hr data-n55-theme="brand" data-n55-size="xsmall">
-
-
+<section class="pfmf-grid pfmf-grid__50_50">
+  <div>
+    <h2 data-aos="fade-up-sm" class="font-semibold aos-init aos-animate">Expertise</h2>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm">Our team brings a wealth of experience in marketing and digital print media. We understand the unique challenges and opportunities that mission-driven organizations face, and we’re here to guide you every step of the way.</p>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm"></p>
+  </div>
+  <section>
+    <img src="/interstellar-website/icon-collab.png"
+    style="width: 30%; margin: auto;">
+  </section>    
+</section>
+<<br>
+<section class="pfmf-grid pfmf-grid__50_50">
+  <div>
+    <img src="/interstellar-website/icon-expertise.png"
+    style="width: 30%; margin: auto;">
+   
+  </div>
+  <section>
+    <h2 data-aos="fade-up-sm" class="font-semibold aos-init aos-animate">Impactful Strategies</h2>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm">We specialize in creating strategies that align with your mission and goals. Whether you’re looking to raise awareness, drive donations, or expand your reach, we have the tools to help you succeed.</p>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm"></p>
+  </section>    
+</section>
+<section class="pfmf-grid pfmf-grid__50_50">
+  <div>
+    <h2 data-aos="fade-up-sm" class="font-semibold aos-init aos-animate">Collaboration</h2>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm">Your vision is our priority. We believe in a collaborative approach, working closely with you to tailor our services to your specific needs. Your success is our shared goal.</p>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate" data-aos="fade-up-sm"></p>
+  </div>
+  <section>
+    <img src="/interstellar-website/icon-strategy.png"
+    style="width: 30%; margin: auto;">
+  </section>    
+</section>
+<br>
+<section class="pfmf-grid pfmf-grid__50_50">
+  <div>
+    <img src="/interstellar-website/icon-results.png"
+    style="width: 30%; margin: auto;">
+   
+  </div>
+  <section>
+    <h2 class="font-semibold aos-init aos-animate">Meaningful Results</h2>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate">We measure our success by the positive impact you create. Our strategies are designed to deliver tangible results, helping you further your mission and create lasting change.</p>
+    <br>
+    <p class="pl-6 text-lg aos-init oas-animate"></p>
+  </section>    
+</section>
+<br>
+<br>
   <!-- cache partial only in production -->
   {{ if hugo.IsProduction }}
     {{ partialCached "essentials/footer.html" . }}
