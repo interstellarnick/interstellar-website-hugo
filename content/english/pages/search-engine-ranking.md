@@ -1,7 +1,7 @@
 ---
 title: Search Engine Ranking
 layout: "search-engine-ranking"
-description: "Master Your Marke With Strategic SEO"
+description: "Master Your Market With Strategic SEO"
 show_page_description: true
 
 gallery:
