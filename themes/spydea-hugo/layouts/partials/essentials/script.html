@@ -143,6 +143,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
         elB.addEventListener( "click", ( ev )=>{
           if( elB.textContent.trim() == "Contact Us" ){  //  Different button on Thank you page (full form)
             valForm( "elm_contact_us", elB )
+          // TODO Delayed redir to thank you page
           }else{ valForm( "elm_get_in_touch", elB ) }
           ev.preventDefault()
         } )
