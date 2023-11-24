@@ -4,22 +4,10 @@ draft: false
 layout: "contact"
 
 contact_links:
-  - title: "Contact Support"
+  - title: "Contact"
     links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contact Careers"
-    links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
-  - title: "Contact Press"
-    links:
-      - label: "support@company.com"
-        link: "mailto:support@company.com"
-      - label: "+1 234 567 8999"
-        link: "tell:+1 234 567 8999"
+      - label: "Info@InterstellarDigital.com"
+        link: "mailto:Info@InterstellarDigital.com"
+      - label: "+1 630 912 0112"
+        link: "tell:+1 630 912 0112"
 ---
