@@ -39,8 +39,9 @@ label = "Client Portal"
 
 [navigation_button_outline]
 enable = true
-label = "Get in Touch"
+label = "Get Started"
 link = "contact/"
+
 
 # contact info
 [contact_info]
@@ -55,7 +56,7 @@ content = "Cut Out the Noise! Get Acquainted With Your Prime Leads™ -- Accurat
 # Subscription
 [quote_form]
 enable = true
-submit_button_label = "Get in Touch"
+submit_button_label = "Get Started"
 placeholder = ""
 action = "#"                        # contact form works with [https://airform.io/] , [https://formspree.io]
 

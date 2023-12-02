@@ -75,6 +75,6 @@ url = "blog/"
 weight = 3
 
 [[footer_02]]
-name = "Get in Touch"
+name = "Get Started"
 url = "contact/"
 weight = 2
