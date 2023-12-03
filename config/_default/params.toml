@@ -35,7 +35,7 @@ preloader = "images/logo-dark.png" # use jpg, png, svg or gif format.
 # Navigation button
 [navigation_button]
 enable = true
-label = "Client Portal"
+label = "Client Login"
 
 [navigation_button_outline]
 enable = true

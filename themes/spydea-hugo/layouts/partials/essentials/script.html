@@ -229,6 +229,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
           }
           if( isVal ) {
               if( DoForm( package[0], package[1], sToken ) ){
+                document.location.href = document.location.href.replace("contact", "thank-you")
                   if( neodigmToast ){ neodigmToast.q("Information Received|Thank you", "brand") }
                   if( neodigmToast ){ neodigmToast.q( contextMsg, "brand" ) }
               }else{
@@ -247,7 +248,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
 
 <script>
   document.addEventListener("DOMContentLoaded", ( ev )=>{
-    let elDrop = document.querySelectorAll( ".nav-item.nav-dropdown.group" )[1]
+    let elDrop = document.querySelector( ".nav-item.nav-dropdown.group" )
     if( elDrop ){
       elDrop.addEventListener( "mouseover", ( ev )=>{ 
           setTimeout( ()=>{

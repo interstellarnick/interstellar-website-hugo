@@ -2,29 +2,35 @@
 
 # main menu
 [[main]]
-name = "Home"
-url = ""
 weight = 1
+name = "How We Help You"
+hasChildren = true
 
 [[main]]
-name = "Our Story"
+name = "Meet Interstellar"
 weight = 2
 hasChildren = true
 
 [[main]]
-parent = "Our Story"
-name = "Case Studies"
+parent = "Knowledge Center"
+name = "Success Stories"
 url = "/case-studies/"
 weight = 1
 
 [[main]]
-parent = "Our Story"
+parent = "Knowledge Center"
+name = "Blog"
+url = "blog/"
+weight = 3
+
+[[main]]
+parent = "Meet Interstellar"
 name = "Interstellar Cares"
 url = "interstellar_cares/"
 weight = 2
 
 [[main]]
-parent = "Our Story"
+parent = "Meet Interstellar"
 name = "Careers"
 url = "careers/"
 weight = 3
@@ -32,12 +38,8 @@ weight = 3
 [[main]]
 name = "Knowledge Center"
 url = "blog/"
-weight = 3
-
-[[main]]
-weight = 4
-name = "How We Help You"
 hasChildren = true
+weight = 3
 
 [[main]]
 parent = "How We Help You"
