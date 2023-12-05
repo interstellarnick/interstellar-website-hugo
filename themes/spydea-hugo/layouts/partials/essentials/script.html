@@ -26,6 +26,7 @@
 
 <style>
   /* Overrides */
+  body { color: rgb(12 12 12) !important; }
   :root {
     --neodigm-theme-brand: #bd21e4;   --neodigm-theme-brand-alt: #0827f5;  /* Custom Override */
     --neodigm-theme-primary: #92a8d1;   --neodigm-theme-primary-alt: #364C75;  /* Serenity approx. 25% darker */
@@ -64,19 +65,19 @@
     color: #fff;
   }
   .bg-image{
-    background-image: url(/interstellar-website/chicago_train.webp);
+    background-image: url(/interstellar-website/intd_bg_space.jpg);
     background-position-x: center;
     background-position-y: center;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
     background-size: cover;
-    opacity: .26;
+    opacity: .77;
     filter: brightness(60%) grayscale(12%);
   }
   .bg-image:nth-child( 3 ){ background-image:none; }
   .breadcrumb-list-item:first-child::after {fill: #ffffff !important;}
-  .text-red-400 {
-    color: #888 !important;
+  .text-red-400{
+    color: var(  --neodigm-theme-primary ) !important;
   }
   body > main > section.section.banner.relative.overflow-hidden.before\:z-10.after\:z-10 > div.container.relative.z-30 > div > div.lg\:col-6.mx-auto.max-w-\[600px\].pt-24.lg\:pt-0 > div:before {
     background-color: var( --neodigm-theme-brand-alt )
