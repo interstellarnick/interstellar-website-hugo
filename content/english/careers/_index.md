@@ -1,24 +1,24 @@
 ---
 title: "Interstellar Digital Careers"
-description: "Always looking forward to hearing from the best and brightest."
+description: "Join a team where innovation thrives, creativity is celebrated, and your career trajectory is as limitless as the stars."
 show_page_description: true
 
 featured_image: "images/career.jpg"
 
 benefits:
-  title: "Why Working With Us?"
+  title: "Why Work With Us: The Interstellar Difference"
   subtitle: "Benefits and Advantages"
-  description: "Pellen tesque in ipsum id orci porta dapibus. titor nibh. Vivamus accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum"
+  description: "At Interstellar Digital, every day is a journey of discovery and growth. We're not just a team; we're trailblazers crafting the future of digital marketing. <br> Here, your ideas can revolutionize industries, your skills are nurtured, and your career ambitions are taken to galactic heights."
   facilities:
     - icon: "fa-solid fa-clock"
-      title: "Flexible Hours"
-      description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
+      title: "Innovation & Inclusivity"
+      description: "Dive into a culture where diversity fuels creativity, and inclusivity ignites collaboration. "
     - icon: "fa-solid fa-house-laptop"
       title: "Hybrid Location"
-      description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
+      description: "We believe in building a strong team spirit while enabling you to work where it makes sense for you."
     - icon: "fa-solid fa-chart-line"
       title: "Career Growth"
-      description: "laoreet elementum nulla dolor sit amet conctetur adipiscing elit aluam lorem amet eget netus dictum odio"
+      description: "We believe in empowering every team member to contribute, learn, and lead. Your voice matters, and your impact is significant."
 
 testimonial:
   enable: false
@@ -56,7 +56,7 @@ testimonial:
 
 opened_positions:
   enable: true
-  title: "Interstellar Digital Open Positions"
+  title: "Discover Your Dream Job"
   subtitle: "JOIN OUR TEAM"
-  description: "We'd love to hear from you!"
+  description: "Ready to join a team where you don't just work, you innovate and inspire? Browse our open positions and find where you fit in our constellation of stars. <br> Your dream job awaits at Interstellar Digital."
 ---

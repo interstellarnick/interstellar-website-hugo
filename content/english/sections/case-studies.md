@@ -4,11 +4,11 @@ casestudies:
   title: "Case Studies"
   subtitle: "OUR SUCCESS"
   items:
-    - title: "LRS Waste Management Services"
+    - title: "Waste Management Provider"
       description: "Search Engine Optimization (SEO) - Local and National"
       uri: "/interstellar-website/case-studies/lrs/"
       customer:
-        logo: "images/about/lrs-logo.svg"
+        logo: "images/about/waste-provider.png"
         name: "Devon Lane"
         image: "images/customers/1.jpg"
         profession: "VP growth at Facebook"

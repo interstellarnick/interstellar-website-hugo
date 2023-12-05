@@ -2,7 +2,7 @@
 title: "LRS Waste Management Services"
 service: "Search Engine Optimization (SEO) - Local and National"
 date: 2023-03-04T05:00:00Z
-image: "/images/blog/1.jpg"
+image: "/images/about/waste-management.jpg"
 author: "Trevor Goodchild"
 draft: false
 metric1: "34%"
