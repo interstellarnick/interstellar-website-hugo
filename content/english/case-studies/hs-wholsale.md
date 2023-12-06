@@ -1,5 +1,5 @@
 ---
-title: "HS Wholesale"
+title: "HS Wholesale: Drove an Increase in Online Sales by $79M!"
 service: "Ecommerce"
 date: 2023-04-04T05:00:00Z
 image: "images/about/hs-wholesale.png"
@@ -12,49 +12,27 @@ metric2Desc: "Average Keyword Ranking Increased by 19 Positions in Q4"
 metric3: "40%"
 metric3Desc: "Percentage of Keywords Ranking in the Top 10 Increased by 40% in Q4" 
 ---
-Background: 
-LRS, a leading waste and recycling services company, partnered with us to enhance their online visibility through both local and national SEO. Our holistic SEO approach led to impressive increases in keyword rankings and subsequently enhanced their online reach. 
-
-
-#### It’s natural for business leaders to be overwhelmed, but keep a balanced outlook
-
 ##### Problem
 
-Despite having an established presence in the recycling industry, LRS struggled with visibility in online search results. Their valuable services were not reaching potential customers who used search engines to find recycling services. This issue was particularly prominent at both the regional and state levels. Interstellar Digital was tasked with increasing search engine ranking in Q4. 
+The client is an online vaping products wholesale supplier. Their industry has difficulty in reaching potential customers because the vaping industry is often blocked from reaching their target market due to the nature of their business.
+<br>
+<br>
+Because traditional online marketing is ineffective for this client (and the entire vaping industry) their online presence is reduced as well as their online potential for sales.
 
 
 ##### Solution
 
-We conducted a comprehensive audit of LRS's existing SEO strategy, identifying opportunities to enhance both their local and national search engine visibility. Our team implemented a customized, location-specific SEO strategy to target potential customers more effectively and increase online visibility in strategic locations. Our SEO plan took course over 3 months and Interstellar Digital were to report on success at the end of Q4. 
+Firstly, we identified high-converting marketing channels by conducting thorough sales analytics, enabling us to redirect advertising resources from underperforming platforms to segments that were generating more sales. Additionally, we revamped the email marketing campaigns by personalizing the content based on previously purchased items, resulting in improved open rates and recipient engagement. 
+<br>
+<br>
+Furthermore, we restructured the website to enhance its search engine optimization (SEO), making it easier for potential customers to find and navigate, especially among its extensive product catalog. 
+<br>
+<br>
+Lastly, our efforts in restructuring the website's content revealed previously untapped audiences and led to increased website traffic and conversions, while simplifying the online ordering process streamlined the customer journey, requiring fewer clicks and providing greater exposure.
 ##### Steps
 
-- Executed a comprehensive SEO audit, optimizing high-volume keyword usage and rectifying technical issues, including duplicate meta tags and slow image load speeds. 
-- Conducted extensive keyword research for local and national search terms to drive more relevant traffic to specific website pages. 
-- Implemented monthly keyword mapping, regularly integrating new, relevant keywords to maintain a dynamic SEO strategy. 
-- Monitored and reported significant increases in keyword rankings and website traffic, indicating a successful enhancement of our digital footprint. 
-
-
-> Metric 1:  Focus Keywords in the Top 10 Positions Increased by 34% in Q4 
-
->We targeted a list of keywords with strategic importance for LRS's business and the recycling industry as a whole. 
-Our ongoing optimization efforts resulted in a 34% increase in the number of these keywords ranking in the top 10 of search engine results. 
-
-> <cite>Esther Howard</cite><br> <span>CEO & Founder</span>
-
-##### Use internal mobility as an opportunity to use internal resources
-
-In order to use our Service, you must meet a number of conditions, including but not limited to:
-
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
-
-##### You must not:
-
-- Enhance or improve User experience, our Site, or our Service.
-- Process transactions.
-- Send emails about our Site or respond to inquiries.
-- Send emails and updates about Conclude, including news and requests for agreement to amended legal documents such as this Privacy Policy and our Terms of Service.
-- Perform any other function that we believe in good is necessary to protect the or proper functioning of our Site or Service.
+- <b>Easy to Find Website:</b> In-depth SEO efforts saw Interstellar Digital optimize over 20,000 item pages to drive discoverability. 
+- <b>Discovery of New Markets:</b> Used CRM data and internally developed funnels to identify, segment, and target new audience types, with a strong focus on attracting and rewarding repeat business.
+- <b>Turn Vsitiors into Customers:</b> We created simplier, easier, more direct, and user-friendly online ordering process requiring fewer clicks, less friction, and more upsells and cross-sells. 
+- <b>Effective Email Campaigns:</b> Very few emails were actually reaching recipients and those who did recieve emails were not opening them. Interstellar Digital personalized emails by identifying previously purchased items, increasing exposure and open rates.
+- <b>Identify High-Converting Marketing Channels:</b> By running sales analytics, we identified higher converting marketing venues based on factors like days and times ads were run and organic traffic was recieved. Intertellar Digital then redirected resources from underperforming advertising campaigns to segments that were producing more sales.
