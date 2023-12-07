@@ -1,7 +1,7 @@
 ---
 title: Digital Advertising
 layout: "digital-advertising"
-description: "Spend Smart | Technology That Serves You"
+description: "We Find the Customers Who Are Looking For You!"
 show_page_description: true
 
 gallery:
