@@ -10,8 +10,8 @@ metric1: "$1.78"
 metric1Desc: "Avgerage Cost-per-Click" 
 metric2: "22.18 Million"
 metric2Desc: "Global Impressions" 
-metric3: "Decreased 40%"
-metric3Desc: "Average Cost-per-Sale" 
+metric3: "40%"
+metric3Desc: "Decreased Average Cost-per-Sale" 
 ---
 
 

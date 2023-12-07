@@ -5,12 +5,12 @@ date: 2023-04-04T05:00:00Z
 image: "images/about/stone-gallery.png"
 author: "Trevor Goodchild"
 draft: false
-metric1: "Decreased by 50%"
-metric1Desc: "Avgerage Cost-per-Click" 
+metric1: "50%"
+metric1Desc: "Decreased Avgerage Cost-per-Click" 
 metric2: "7.6x"
-metric2Desc: "Return on Advertising Spennd" 
-metric3: "Decreased by $47"
-metric3Desc: "Cost-per-Lead" 
+metric2Desc: "Return on Advertising Spend" 
+metric3: "$47"
+metric3Desc: "Dcreased Cost-per-Lead" 
 ---
 
 
