@@ -71,15 +71,15 @@
             <section class="l-metrics pfmf-grid pfmf-grid__33_33_33">
             <div>
               <header class="h-center"><p>{{ .Params.metric1 }}</p></header>
-              <div class="h-center"><p>Focus Keywords in the Top 10 Positions Increased by 34% in Q4</p></div>
+              <div class="h-center"><p>{{ .Params.metric1Desc }}</p></div>
             </div>
             <div>
               <header class="h-center"><p>{{ .Params.metric2 }}</p></header>
-              <div class="h-center"><p>Average Keyword Ranking Increased by 19 Positions in Q4</p></div>
+              <div class="h-center"><p>{{ .Params.metric2Desc }}</p></div>
             </div>
             <div>
               <header class="h-center"><p>{{ .Params.metric3 }}</p></header>
-              <div class="h-center"><p>Percentage of Keywords Ranking in the Top 10 Increased by 40% in Q4</p></div>
+              <div class="h-center"><p>{{ .Params.metric3Desc }}</p></div>
             </div>
             </section>
             {{ .Content }}

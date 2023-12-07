@@ -21,7 +21,7 @@ benefits:
       description: "We believe in empowering every team member to contribute, learn, and lead. Your voice matters, and your impact is significant."
 
 testimonial:
-  enable: false
+  enable: true
   title: "Take an look at our customers stories"
   subtitle: "INSPIRING TESTIMONIALS"
   items:
