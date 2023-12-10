@@ -125,7 +125,7 @@
     height: 400px;
     opacity: .7;
   }
-  h1 {color: #fff !important; font-size: 500px;}
+  h1 {color: #fff !important;}
   .header.header-fixed-top { z-index: 32 !important; }
   h2, .h2 { font-size: 30px; }
   body > main > section.section.page-header.relative.overflow-hidden.pb-96.after\:z-10 > div.container.relative.z-30 > div > div > p{
@@ -134,7 +134,7 @@
   /*  MQ  */
   @media only screen and (min-width:48.1em){/* med *//* lg */
     h2, .h2 { font-size: 44px; }
-    h1 {color: #fff !important; font-size: 500px;}
+    h1 {color: #fff !important;}
 
   }
 neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
@@ -189,11 +189,21 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
   }
 
   function DoForm( sElm, sOther=document.location.href, sToken ){
-      var oW2L = {oid:"00D6A000002intt", retURL: "https://www.interstellardigital.com/thank-you/"};
+      var oW2L = {oid:"00D6A000002intt", retURL: "https://interstellardigital-home.onrender.com/thank-you/"};
       var _sN = new Date();
       _sN = String( _sN.getTime() ) + "_";
       oW2L.email = _sN + sElm;  //  Make elm unique
       oW2L.description = sElm + " | " + sToken + " | " + sOther;
+      fw2l( oW2L );
+      return true;
+  }
+  function doForm_getintouch( oInputs, sToken ){
+      //let oW2L = {oid:"00D6A000002intt", retURL: "https://interstellardigital-home.onrender.com/thank-you/"};  //  A55
+      let oW2L = {oid:"00DHs000001vFND", retURL: "https://interstellardigital-home.onrender.com/thank-you/"};
+      
+      oW2L = Object.assign( oInputs, oW2L )
+  console.log(" -- -- -- -- - oW2L | " , oW2L )
+      oW2L.description = sToken + " | " + document.location.href;
       fw2l( oW2L );
       return true;
   }
@@ -205,7 +215,10 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
       let valMsg = null;
       let package = [];
       if( sToken && eForm ){
-          eForm = eForm.form;
+          if( !eForm?.form){
+            eForm = document.getElementById("js-frm__getintouch")
+          }else{ eForm = eForm.form }
+          
           switch( sToken ){
               case "elm_contact_us":
                 contextMsg = "We will respond to your|message shortly";
@@ -215,13 +228,13 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
                 //  TODO Get val of drop down document.getElementById("purpose").value
                 if( !eForm.fname.value ){ isVal = false; valMsg = "First Name is|Required"; }
                 if( !eForm.lname.value ){ isVal = false; valMsg = "Last Name is|Required"; }
-                if( !eForm.email.value ){
-                    isVal = false; valMsg = "Email Address is|Required";
-                }
+                if( !eForm.email.value ){ isVal = false; valMsg = "Email Address is|Required"; }
                 package = [eForm.email.value, eForm.fname.value + " " + eForm.lname.value + " " + eForm.message.value + " " + document.getElementById("purpose").value ];
               break;
-              case "elm_get_in_touch":
+              case "js-cta-sub__getintouch":
                   contextMsg = "We will respond to your|message shortly";
+                  if( !eForm.state.value ){ isVal = false; valMsg = "Please Select a|State"; }
+                  if( !eForm.industry.value ){ isVal = false; valMsg = "Please Select an|Industry"; }
                   if( (eForm.email.value.indexOf("@") === -1) || (eForm.email.value.indexOf(".") === -1) ){
                       isVal = false; valMsg = "Email Address is|Invalid";
                   }
@@ -229,20 +242,48 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
                   if( !eForm.email.value ){
                       isVal = false; valMsg = "Email Address is|Required";
                   }
-                  package = [eForm.email.value ];
+                  if( !eForm.last_name.value ){ isVal = false; valMsg = "Last Name is|Required"; }
+                  if( !eForm.first_name.value ){ isVal = false; valMsg = "First Name is|Required"; }
+                  package = [eForm.email.value];
                   break;
               default:
                   console.warn( sToken, " does not exist.");
           }
           if( isVal ) {
-              if( DoForm( package[0], package[1], sToken ) ){
-                document.location.href = document.location.href.replace("contact", "thank-you")
-                  if( neodigmToast ){ neodigmToast.q("Information Received|Thank you", "brand") }
-                  if( neodigmToast ){ neodigmToast.q( contextMsg, "brand" ) }
-              }else{
-                  if( neodigmToast ){ neodigmToast.q("Service is unavailable|Please try again later", "danger") }
+            if( sToken == "js-cta-sub__getintouch"){
+              let oInputs = {
+                "first_name": eForm.first_name.value,
+                "last_name": eForm.last_name.value,
+                "email": eForm.email.value,
+                "company": eForm.company.value,
+                "industry": eForm.industry.value,
+                "state": eForm.state.value
               }
-              neodigmSodaPop.close();
+              if( doForm_getintouch( oInputs, sToken ) ){
+                if( neodigmWired4Sound ) neodigmWired4Sound.sound( 5 )
+                neodigmToast.q("Thank you! We will be in|touch shortly.")
+                setTimeout(()=>{ document.location.href = document.location.href.replace("contact", "thank-you") }, 7e3 )
+              }else{
+                if( neodigmToast ){ neodigmToast.q("Service is unavailable|Please try again later", "danger") }
+              }
+              neodigmSodaPop.close();              
+            }
+            if( sToken == "elm_contact_us"){
+              let oInputs = {
+                "first_name": eForm.fname.value,
+                "last_name": eForm.lname.value,
+                "email": eForm.email.value,
+              }
+
+              if( doForm_getintouch( oInputs, sToken ) ){
+                if( neodigmWired4Sound ) neodigmWired4Sound.sound( 5 )
+                neodigmToast.q("Thank you! We will be in|touch shortly.")
+                setTimeout(()=>{ document.location.href = document.location.href.replace("contact", "thank-you") }, 7e3 )
+              }else{
+                if( neodigmToast ){ neodigmToast.q("Service is unavailable|Please try again later", "danger") }
+              }
+              neodigmSodaPop.close();        
+            }
           }else{
               neodigmSodaPop.shake();
               if( neodigmToast ){ neodigmToast.q( valMsg, "danger" ); }
@@ -250,8 +291,8 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
       }
   }
 </script>
-<!--  SFDC form validation and sub end  -->
-<!-- SFDC CTA End-->
+<!--  SFDC form validation and sub end  --> 
+<!-- SFDC CTA End--> 
 
 <script>
   document.addEventListener("DOMContentLoaded", ( ev )=>{
@@ -284,14 +325,115 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
   }
 </script>
 
+<template id="js-soda-getintouch" data-n55-sodapop-modal="false" 
+data-n55-sodapop-size="large">
+  <neodigm-carousel id="js-soda-caro_getintouch">
+    <section>
+        <section data-n55-carousel-page-name="PageIntro">
+
+          <section class="pfmf-grid pfmf-grid__30_70">
+            <div>
+              <div class="h-center">
+                <h2 id="js-txth2__getintouch--fb" class="readampm__caption txt__dmsans">Let's Connect!</h2>
+              </div>
+              <div class="h-ds-b__desktop--only"><br><br></div>
+              <div class="h-ds-b__desktop--only h-left readampm txt__dmsans">
+                <p>Whether you have questions about our services, want to discuss a tailored strategy, or simply want to explore how we can work together, we’re here to chat.</p>
+              </div>
+              <br>
+            </div>
+            <section class="l-id-frm">
+              <form id="js-frm__getintouch" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHs000001vFND" method="POST">
+                <input type=hidden name="oid" value="00DHs000001vFND">
+                <input type=hidden name="retURL" value="https://interstellardigital-home.onrender.com/thank-you/">
+                <br>
+                <section class="pfmf-grid pfmf-grid__33_33_33"
+                style="width: 99%;">
+                <article>
+                  <input id="first_name" maxlength="40" name="first_name" class="n55-lc__input h-center" type="text" value="" placeholder="First Name">
+                </article>
+                <article>
+                  <input id="last_name" maxlength="80" name="last_name" class="n55-lc__input h-center" type="text" value="" placeholder="Last Name">
+                </article>
+                <article>
+                  <input id="email" maxlength="80" name="email" class="n55-lc__input h-center" type="text" value="" placeholder="Email Address">
+                </article>
+                </section>
+                <br>
+
+                <section class="pfmf-grid pfmf-grid__33_33_33"
+                style="width: 99%;">
+                  <article class="h-center">
+                    <input id="company" maxlength="40" name="company" class="n55-lc__input h-center" type="text" value="" placeholder="Company Name">
+                  </article>
+                  <article class="h-center">
+                    <select id="industry" class="n55-lc__input h-center" name="industry"> <option value="">Industry ...</option><option value="Agriculture">Agriculture</option> <option value="Apparel">Apparel</option> <option value="Banking">Banking</option> <option value="Biotechnology">Biotechnology</option> <option value="Chemicals">Chemicals</option> <option value="Communications">Communications</option> <option value="Construction">Construction</option> <option value="Consulting">Consulting</option> <option value="Education">Education</option> <option value="Electronics">Electronics</option> <option value="Energy">Energy</option> <option value="Engineering">Engineering</option> <option value="Entertainment">Entertainment</option> <option value="Environmental">Environmental</option> <option value="Finance">Finance</option> <option value="Food &amp; Beverage">Food &amp; Beverage</option> <option value="Government">Government</option> <option value="Healthcare">Healthcare</option> <option value="Hospitality">Hospitality</option> <option value="Insurance">Insurance</option> <option value="Machinery">Machinery</option> <option value="Manufacturing">Manufacturing</option> <option value="Media">Media</option> <option value="Not For Profit">Not For Profit</option> <option value="Other">Other</option> <option value="Recreation">Recreation</option> <option value="Retail">Retail</option> <option value="Shipping">Shipping</option> <option value="Technology">Technology</option> <option value="Telecommunications">Telecommunications</option> <option value="Transportation">Transportation</option> <option value="Utilities">Utilities</option> </select>
+                  </article>
+                  <article class="h-center">
+                    <select id="state" name="state" class="n55-lc__input h-center" ><option value="">State...</option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option></select>
+                  </article>
+                </section>
+                <br>
+
+                <section class="pfmf-grid pfmf-grid__33_33_33"
+                style="width: 99%;">
+                  <article></article>
+                  <article class="h-center">
+                    <a id="js-cta-sub__getintouch"
+                    data-n55-enchanted-cta=""
+                    onClick="valForm( 'js-cta-sub__getintouch', this )"
+                    data-n55-enchanted-cta-dont-touch="true"
+                    data-n55-enchanted-cta-shape-off="true"
+                    data-n55-enchanted-cta-hover-an="true"
+                    data-n55-enchanted-cta-size="medium"
+                    data-n55-theme="brand"
+                    data-n55-wired4sound-click="vibrate"><span
+                    data-n55-wired4sound-hover="3">Get in Touch</span><span>Send Now <neodigm-icon class="material-symbols-outlined">send</neodigm-icon></span></a>
+                  </article>
+                  <article></article>
+                </section>
+                <br>
+              </form>
+            </section>    
+          </section>
+
+        </section>
+        <section data-n55-carousel-page-name="PageDone">
+        </section>
+    </section>
+  </neodigm-carousel>
+  <style>
+    .l-id-frm { border: solid 1px #aaaaaa; border-radius: 12px; padding: 8px; margin: 8px; background-color: var( --intd-gray );}
+    .l-id-frm INPUT { width: 88%;}
+    .l-id-frm SELECT {
+      border-radius: 8px;
+      border: solid 1px #aaaaaa;
+      color: var( --neodigm-theme-night );
+      margin: 8px auto;
+      padding: 10px 8px;
+      width: 88%;
+    }
+  </style>
+</template>
+<script> /*  Soda Template Logic */
+document.addEventListener("DOMContentLoaded", ( ev )=>{
+  neodigmSodaPop.setOnAfterOpen( ()=>{
+    neodigmCarousel.init()
+    neodigmUtils.typeOn({"q1st": "#js-txth2__getintouch--fb", "msg": "Thanks for Reaching Out!|Fill Out This Simple Form|Let's Connect!|Get in Touch Now", "mode":"NONE", "uniqueDelay": 101 })
+  }, "js-soda-getintouch")
+} )
+</script>
+
+
+
 <template id="js-pup__login--id" data-n55-sodapop-modal="false" 
-data-n55-sodapop-size="small">
+data-n55-sodapop-size="xsmall">
 <div>
   <div style="width: 240px; margin: 0 auto; overflow: hidden; height: 96px;">
     <svg class="gnss-vect__branded--color" style="fill: var( --intd-gnosis )"
     data-n55-toast="At the Heart of Gnosis|is Prime Leads™" data-n55-theme="success" viewBox="0 0 237.74 168.19"><path d="M25.56 61.92c-4.51 0-8.36-.76-11.56-2.27-3.19-1.51-5.66-3.72-7.42-6.62-1.75-2.9-2.7-6.42-2.84-10.55-.05-2.06-.07-4.27-.07-6.62s.02-4.58.07-6.7c.14-4.03 1.09-7.46 2.84-10.3 1.75-2.83 4.25-5 7.49-6.52 3.24-1.51 7.07-2.27 11.48-2.27 3.55 0 6.67.46 9.36 1.37 2.69.91 4.94 2.1 6.77 3.56 1.82 1.46 3.22 3.06 4.18 4.79.96 1.73 1.46 3.38 1.51 4.97 0 .43-.14.8-.43 1.12-.29.31-.67.47-1.15.47h-8.93c-.48 0-.85-.1-1.12-.29-.26-.19-.49-.48-.68-.86-.34-.86-.88-1.74-1.62-2.63-.74-.89-1.74-1.64-2.99-2.27-1.25-.62-2.88-.94-4.9-.94-3.02 0-5.41.79-7.16 2.38-1.75 1.58-2.7 4.18-2.84 7.78-.14 4.13-.14 8.33 0 12.6.14 3.74 1.12 6.43 2.92 8.06 1.8 1.63 4.21 2.45 7.24 2.45 1.97 0 3.73-.35 5.29-1.04 1.56-.7 2.8-1.79 3.71-3.28.91-1.49 1.37-3.38 1.37-5.69v-1.8h-7.85c-.48 0-.89-.18-1.22-.54-.34-.36-.5-.78-.5-1.26v-4.61c0-.53.17-.96.5-1.3.34-.33.74-.5 1.22-.5h17.64c.53 0 .96.17 1.3.5.33.34.5.77.5 1.3v7.85c0 4.13-.9 7.66-2.7 10.58-1.8 2.93-4.37 5.17-7.7 6.73-3.34 1.56-7.24 2.34-11.7 2.34Zm31.82-.72c-.48 0-.89-.17-1.22-.5-.34-.34-.5-.77-.5-1.3V25.56c0-.53.17-.96.5-1.3s.74-.5 1.22-.5h7.06c.53 0 .96.17 1.3.5.33.34.5.77.5 1.3v2.81c1.25-1.54 2.85-2.81 4.82-3.82 1.97-1.01 4.37-1.51 7.2-1.51s5.32.64 7.45 1.91c2.14 1.27 3.82 3.12 5.04 5.54 1.22 2.42 1.84 5.36 1.84 8.82V59.4c0 .53-.18.96-.54 1.3-.36.34-.78.5-1.26.5h-7.63c-.53 0-.96-.17-1.3-.5-.34-.34-.5-.77-.5-1.3V39.74c0-2.54-.61-4.52-1.84-5.94-1.22-1.42-3.01-2.12-5.36-2.12s-4.06.71-5.4 2.12c-1.34 1.42-2.02 3.4-2.02 5.94V59.4c0 .53-.17.96-.5 1.3-.34.34-.74.5-1.22.5h-7.63Zm60.99.72c-3.98 0-7.32-.66-10.01-1.98-2.69-1.32-4.74-3.2-6.16-5.65s-2.2-5.3-2.34-8.57c-.05-.96-.07-2.05-.07-3.28s.02-2.29.07-3.2c.14-3.31.96-6.18 2.45-8.6 1.49-2.42 3.58-4.3 6.26-5.62 2.69-1.32 5.95-1.98 9.79-1.98s7.03.66 9.72 1.98c2.69 1.32 4.78 3.19 6.26 5.62 1.49 2.42 2.3 5.29 2.45 8.6.1.91.14 1.98.14 3.2s-.05 2.32-.14 3.28c-.14 3.26-.93 6.12-2.34 8.57-1.42 2.45-3.47 4.33-6.16 5.65-2.69 1.32-6 1.98-9.94 1.98Zm0-7.92c2.35 0 4.13-.73 5.33-2.2 1.2-1.46 1.85-3.61 1.94-6.44.05-.72.07-1.68.07-2.88s-.02-2.16-.07-2.88c-.1-2.78-.74-4.92-1.94-6.41-1.2-1.49-2.98-2.23-5.33-2.23s-4.14.75-5.36 2.23c-1.22 1.49-1.88 3.62-1.98 6.41-.05.72-.07 1.68-.07 2.88s.02 2.16.07 2.88c.1 2.83.76 4.98 1.98 6.44s3.01 2.2 5.36 2.2Zm40.89 7.92c-2.98 0-5.53-.35-7.67-1.04-2.14-.69-3.86-1.55-5.18-2.56-1.32-1.01-2.3-2.03-2.95-3.06-.65-1.03-1-1.91-1.04-2.63-.05-.53.12-.96.5-1.3.38-.34.77-.5 1.15-.5h6.98c.14 0 .29.02.43.07s.29.17.43.36c.62.43 1.27.92 1.94 1.48.67.55 1.45 1.02 2.34 1.4.89.38 2 .58 3.35.58 1.58 0 2.93-.32 4.03-.97 1.1-.65 1.66-1.57 1.66-2.77 0-.86-.25-1.58-.76-2.16-.5-.58-1.45-1.1-2.84-1.58s-3.46-1.01-6.19-1.58c-2.59-.58-4.8-1.34-6.62-2.3-1.83-.96-3.19-2.17-4.1-3.64-.91-1.46-1.37-3.23-1.37-5.29 0-1.87.59-3.67 1.76-5.4 1.17-1.73 2.92-3.16 5.22-4.28 2.3-1.13 5.18-1.69 8.64-1.69 2.64 0 4.96.32 6.95.97 1.99.65 3.66 1.46 5 2.45 1.34.98 2.36 1.99 3.06 3.02.7 1.03 1.07 1.93 1.12 2.7.05.48-.1.89-.43 1.22-.34.34-.72.5-1.15.5h-6.41c-.24 0-.46-.04-.65-.11s-.36-.18-.5-.32c-.58-.38-1.17-.83-1.76-1.33-.6-.5-1.31-.95-2.12-1.33-.82-.38-1.87-.58-3.17-.58-1.58 0-2.8.35-3.64 1.04-.84.7-1.26 1.57-1.26 2.63 0 .67.22 1.3.65 1.87.43.58 1.32 1.1 2.66 1.58s3.38.98 6.12 1.51c3.26.58 5.86 1.44 7.78 2.59s3.3 2.48 4.14 4a9.84 9.84 0 0 1 1.26 4.86c0 2.26-.67 4.26-2.02 6.01-1.34 1.75-3.3 3.12-5.87 4.1-2.57.98-5.72 1.48-9.47 1.48ZM185.04 18c-.48 0-.89-.17-1.22-.5-.34-.33-.5-.77-.5-1.3v-5.76c0-.53.17-.97.5-1.33.33-.36.74-.54 1.22-.54h7.56c.53 0 .97.18 1.33.54.36.36.54.8.54 1.33v5.76c0 .53-.18.96-.54 1.3-.36.34-.8.5-1.33.5h-7.56Zm.22 43.2c-.48 0-.89-.17-1.22-.5-.34-.34-.5-.77-.5-1.3V25.56c0-.53.17-.96.5-1.3.33-.34.74-.5 1.22-.5h7.2c.53 0 .96.17 1.3.5.34.34.5.77.5 1.3V59.4c0 .53-.17.96-.5 1.3-.34.34-.77.5-1.3.5h-7.2Zm32.75.72c-2.98 0-5.53-.35-7.67-1.04-2.14-.69-3.86-1.55-5.18-2.56-1.32-1.01-2.3-2.03-2.95-3.06-.65-1.03-1-1.91-1.04-2.63-.05-.53.12-.96.5-1.3.38-.34.77-.5 1.15-.5h6.98c.14 0 .29.02.43.07s.29.17.43.36c.62.43 1.27.92 1.94 1.48.67.55 1.45 1.02 2.34 1.4.89.38 2 .58 3.35.58 1.58 0 2.93-.32 4.03-.97 1.1-.65 1.66-1.57 1.66-2.77 0-.86-.25-1.58-.76-2.16-.5-.58-1.45-1.1-2.84-1.58s-3.46-1.01-6.19-1.58c-2.59-.58-4.8-1.34-6.62-2.3-1.83-.96-3.19-2.17-4.1-3.64-.91-1.46-1.37-3.23-1.37-5.29 0-1.87.59-3.67 1.76-5.4 1.17-1.73 2.92-3.16 5.22-4.28 2.3-1.13 5.18-1.69 8.64-1.69 2.64 0 4.96.32 6.95.97 1.99.65 3.66 1.46 5 2.45 1.34.98 2.36 1.99 3.06 3.02.7 1.03 1.07 1.93 1.12 2.7.05.48-.1.89-.43 1.22-.34.34-.72.5-1.15.5h-6.41c-.24 0-.46-.04-.65-.11s-.36-.18-.5-.32c-.58-.38-1.17-.83-1.76-1.33-.6-.5-1.31-.95-2.12-1.33-.82-.38-1.87-.58-3.17-.58-1.58 0-2.8.35-3.64 1.04-.84.7-1.26 1.57-1.26 2.63 0 .67.22 1.3.65 1.87.43.58 1.32 1.1 2.66 1.58s3.38.98 6.12 1.51c3.26.58 5.86 1.44 7.78 2.59s3.3 2.48 4.14 4a9.84 9.84 0 0 1 1.26 4.86c0 2.26-.67 4.26-2.02 6.01-1.34 1.75-3.3 3.12-5.87 4.1-2.57.98-5.72 1.48-9.47 1.48Z" style="stroke-width:0"/></svg>
   </div>
-    <section class="readable__doc  txt__dmsans">
+    <section class="readable__doc txt__dmsans">
         <article style="padding: 2px 12px;">
 
             <form autocomplete="off" novalidate
@@ -302,8 +444,7 @@ data-n55-sodapop-size="small">
 
 <input id="tsk_contact_us_email" name="email" class="n55-lc__input" type="password"
                 placeholder="Password">
-               
-               
+
                 <div class="h-center">
                     <br>
                     <a id="btn-contact-us" data-n55-enchanted-cta
