@@ -143,6 +143,13 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
 <!-- SFDC CTA Begin -->
 <script>
   document.addEventListener("DOMContentLoaded", ( ev )=>{
+    let elTopGetStarted = document.querySelector("body > header > nav > div > div > div > a.btn.btn-primary.w-\\[200px\\].min-\\[340px\\]\\:w-\\[300px\\].lg\\:w-auto")
+    if( elTopGetStarted ){
+      elTopGetStarted.addEventListener( "click", ( ev )=>{
+        neodigmSodaPop.autoOpen("js-soda-getintouch")
+        ev.preventDefault()
+      } )
+    }
     let aBtn_GetInTouch = [ ... document.querySelectorAll( "button[type='submit']" )]
     if( aBtn_GetInTouch.length ){   //  Expect two submit buttons
       aBtn_GetInTouch.forEach( ( elB )=>{
