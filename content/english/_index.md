@@ -54,11 +54,11 @@ process:
       description: "See your Marketing Deliverables, marketing KPIs, and Prime Lead totals from your custom Gnosis dashboard."
       image: "images/about/interstellar-portal.jpg"
     - title: "Intelligent 24/7 Reporting"
-      description: "It's Simple: You don’t have time for misleading leads and KPIs. Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. "
-      image: "images/tab-contents/feature-tab-content-2.jpg"
+      description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. "
+      image: "images/about/interstellar-portal.jpg"
     - title: "A Dedicated Expert in your Field"
-      description: "Book touchpoints with your Account Manager."
-      image: "images/tab-contents/feature-tab-content-3.jpg"
+      description: "Easily book touchpoints with your Account Manager."
+      image: "images/about/interstellar-portal.jpg"
 
 fun_fact:
   enable: true
