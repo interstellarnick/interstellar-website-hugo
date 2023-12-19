@@ -333,7 +333,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
 </script>
 
 <template id="js-soda-getintouch" data-n55-sodapop-modal="false" 
-data-n55-sodapop-size="large">
+data-n55-sodapop-size="small">
   <neodigm-carousel id="js-soda-caro_getintouch">
     <section>
         <section data-n55-carousel-page-name="PageIntro">
@@ -341,20 +341,27 @@ data-n55-sodapop-size="large">
           <section class="pfmf-grid pfmf-grid__30_70">
             <div>
               <div class="h-center">
-                <h2 id="js-txth2__getintouch--fb" class="readampm__caption txt__dmsans">Let's Connect!</h2>
+           
               </div>
               <div class="h-ds-b__desktop--only"><br><br></div>
               <div class="h-ds-b__desktop--only h-left readampm txt__dmsans">
-                <p>Whether you have questions about our services, want to discuss a tailored strategy, or simply want to explore how we can work together, we’re here to chat.</p>
+                <img src="/images/logo-dark.png">
+                <p>Capture the leads that matter most!</p>
+ 
+      
               </div>
               <br>
             </div>
             <section class="l-id-frm">
+             <center>
+        
+             <h2>BOOM YOUR BUSINESS</h2></center> 
+              
               <form id="js-frm__getintouch" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHs000001vFND" method="POST">
                 <input type=hidden name="oid" value="00DHs000001vFND">
                 <input type=hidden name="retURL" value="https://interstellardigital-home.onrender.com/thank-you/">
                 <br>
-                <section class="pfmf-grid pfmf-grid__33_33_33"
+                <section class="pfmf-grid pfmf-grid__50_50"
                 style="width: 99%;">
                 <article>
                   <input id="first_name" maxlength="40" name="first_name" class="n55-lc__input h-center" type="text" value="" placeholder="First Name">
@@ -362,15 +369,19 @@ data-n55-sodapop-size="large">
                 <article>
                   <input id="last_name" maxlength="80" name="last_name" class="n55-lc__input h-center" type="text" value="" placeholder="Last Name">
                 </article>
-                <article>
-                  <input id="email" maxlength="80" name="email" class="n55-lc__input h-center" type="text" value="" placeholder="Email Address">
-                </article>
+                
                 </section>
-                <br>
-
+                <section class="pfmf-grid pfmf-grid_100"
+                style="width: 99%;">
+                  <article>
+                    <article>
+                      <input id="email" maxlength="80" name="email" class="n55-lc__input" type="text" value="" placeholder="Email Address">
+                    </article>
+                </section>
                 <section class="pfmf-grid pfmf-grid__33_33_33"
                 style="width: 99%;">
                   <article class="h-center">
+                    
                     <input id="company" maxlength="40" name="company" class="n55-lc__input h-center" type="text" value="" placeholder="Company Name">
                   </article>
                   <article class="h-center">
@@ -397,8 +408,7 @@ data-n55-sodapop-size="large">
                     data-n55-wired4sound-click="vibrate"><span
                     data-n55-wired4sound-hover="3">Get in Touch</span><span>Send Now <neodigm-icon class="material-symbols-outlined">send</neodigm-icon></span></a>
                   </article>
-                  <article></article>
-                </section>
+    
                 <br>
               </form>
             </section>    
@@ -422,6 +432,8 @@ data-n55-sodapop-size="large">
     }
   </style>
 </template>
+
+<!--
 <script> /*  Soda Template Logic */
 document.addEventListener("DOMContentLoaded", ( ev )=>{
   neodigmSodaPop.setOnAfterOpen( ()=>{
@@ -430,7 +442,7 @@ document.addEventListener("DOMContentLoaded", ( ev )=>{
   }, "js-soda-getintouch")
 } )
 </script>
-
+-->
 
 
 <template id="js-pup__login--id" data-n55-sodapop-modal="false" 
