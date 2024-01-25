@@ -46,13 +46,13 @@ feature_list:
 
 process:
   enable: true
-  title: "Gnosis: Included With All Marketing Programs"
+  title: "A Clear View of Your Program"
   subtitle: "A New Era of Precision and Results"
   description: "It's Simple: You don’t have time for misleading leads and KPIs."
   list:
     - title: "A Clear View of Your Marketing Program"
-      description: "See your Marketing Deliverables, marketing KPIs, and Prime Lead totals from your custom Gnosis dashboard."
-      image: "images/about/interstellar-portal.jpg"
+      description: "Easy access to your latest Marketing Deliverables."
+      image: "/images/interstellar-portal.png"
     - title: "Intelligent 24/7 Reporting"
       description: "Gnosis eliminates the noise, filtering out irrelevant data like page visits, spam calls, and forms. "
       image: "images/about/interstellar-portal.jpg"

@@ -1,7 +1,7 @@
 ---
 title: Terms & Conditions
 date: 2018-09-24T11:07:10+06:00
-description: ""
+description: "Interstellar Digital Terms and Conditions"
 ---
 
 ### 1\. Definitions

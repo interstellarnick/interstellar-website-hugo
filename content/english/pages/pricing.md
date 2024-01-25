@@ -1,6 +1,7 @@
 ---
 title: Choose the Plan That’s Right for You
 layout: "pricing"
+draft: true
 
 pricing_plan:
   title: "Try Spydea for free Now"
