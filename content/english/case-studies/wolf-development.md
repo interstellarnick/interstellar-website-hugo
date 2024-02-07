@@ -7,7 +7,7 @@ image: "images/about/wolf-development.png"
 author: "Trevor Goodchild"
 draft: false
 metric1: "50%"
-metric1Desc: "Decreased Avgerage Cost-per-Click" 
+metric1Desc: "Decreased Average Cost-per-Click" 
 metric2: "7.6x"
 metric2Desc: "Return on Advertising Spennd" 
 metric3: "$47"

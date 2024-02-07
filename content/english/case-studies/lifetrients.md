@@ -7,7 +7,7 @@ image: "images/about/lifetrients.png"
 author: "Trevor Goodchild"
 draft: false
 metric1: "$1.78"
-metric1Desc: "Avgerage Cost-per-Click" 
+metric1Desc: "Average Cost-per-Click" 
 metric2: "22.18 Million"
 metric2Desc: "Global Impressions" 
 metric3: "40%"
