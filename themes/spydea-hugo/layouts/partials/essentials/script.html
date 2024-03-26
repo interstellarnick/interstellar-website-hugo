@@ -1,3 +1,8 @@
+<!-- Search and replace with backslash
+https://interstellarnick.github.io/interstellar-website/
+/interstellar-website/
+/interstellar-website
+-->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -253,7 +258,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
                   contextMsg = "We will respond to your|message shortly";
                   //if( !eForm.state.value ){ isVal = false; valMsg = "Please Select a|State"; }
                   if( !eForm.phone.value ){ isVal = false; valMsg = "Phone is|required"; }
-                  if( !eForm.description.value ){ isVal = false; valMsg = "Description is|required"; }
+                  if( !eForm.description.value ){ isVal = false; valMsg = "Service request is|required"; }
                   if( (eForm.email.value.indexOf("@") === -1) || (eForm.email.value.indexOf(".") === -1) ){
                       isVal = false; valMsg = "Email Address is|Invalid";
                   }
@@ -275,7 +280,7 @@ neodigm-sodapop-scrim-close > svg { fill: var( --neodigm-theme-brand-alt ); }
                 "last_name": eForm.last_name.value,
                 "email": eForm.email.value,
                 "phone": eForm.phone.value,
-                "discription": eForm.discription.value
+                "description": eForm.description.value
               }
               if( doForm_getintouch( oInputs, sToken ) ){
                 setTimeout(()=>{ document.location.href = "https://interstellardigital.com/thank-you/" }, 1600 )
